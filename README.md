@@ -1,4 +1,4 @@
-[My stackshare profile](https://stackshare.io/vchaillo)
+[My stackshare profile](https://stackshare.io/vchaillo){:target="_blank"}
 
 [![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=vchaillo&show_icons=true&theme=yeblu&title_color=C5F20C&icons_color=C5F20C)](https://github.com/anuraghazra/github-readme-stats)
 
