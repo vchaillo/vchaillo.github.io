@@ -1,6 +1,6 @@
-### [My stackshare profile](https://stackshare.io/vchaillo)
+### [Stackshare profile](https://stackshare.io/vchaillo)
 
-### [My Bento](https://bento.me/vchaillo))
+### [Bento page](https://bento.me/vchaillo)
 
 [![Anurag's GitHub stats](https://github-readme-stats-green-rho-54.vercel.app/api?username=vchaillo&show_icons=true&theme=yeblu&title_color=C5F20C&icons_color=C5F20C)](https://github.com/anuraghazra/github-readme-stats)
 
