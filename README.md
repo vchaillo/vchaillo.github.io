@@ -1,3 +1,5 @@
+### [Resume](https://vchaillo.github.io/)
+
 ### [Stackshare profile](https://stackshare.io/vchaillo)
 
 ### [Bento page](https://bento.me/vchaillo)
