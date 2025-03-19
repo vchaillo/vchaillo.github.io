@@ -29,7 +29,7 @@ jobs:
 
       - name: Build Angular app
         # run: ng build --configuration=production --base-href "/vchaillo/"
-        run: NODE_ENV=production npm run build --if-present --base-href "/vchaillo/"
+        run: NODE_ENV=production npm run build --if-present
 
       - name: Force https
         run: touch dist/vchaillo/.nojekyll
