@@ -1,11 +1,15 @@
 <div class="card">
 	<div class="card-image">
-		<!-- <img src="https://placehold.co/600x400" alt=""> -->
-		<img src="https://picsum.photos/id/{{ getRandomNumber() }}/600/400" alt="">
+		<img src="{{ image ? image : 'https://picsum.photos/600/400' }}" alt="" />
 	</div>
 	<div class="card-body">
 		<h3 class="card-title">{{ title }}</h3>
 		<p class="card-subtitle">{{ subtitle }}</p>
-		<!-- <small class="card-text">{{ text }}</small> -->
+		@if (text) {
+		<small class="card-text">{{ text }}</small>
+		}
+		@if (url) {
+		<small class="card-url">{{ url }}</small>
+		}
 	</div>
 </div>

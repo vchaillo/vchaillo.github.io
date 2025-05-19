@@ -1,19 +1,7 @@
 .experiences {
-	// border-left: 3px solid #f1ddc4;
-	// padding-left: 2rem;
-
-	.timeline {
-		height: 100%;
-		position: absolute;
-		width: 3px;
-		background-color: #f1ddc4;
-
-		&::after {
-			content: '';
-		}
-	}
 
 	.experience {
+		border-left: 3px solid #f1ddc4;
 		padding: 2rem;
 		position: relative;
 		top: 0;
@@ -23,7 +11,7 @@
 			content: '';
 			display: inline-block;
 			position: absolute;
-			left: -8px;
+			left: -11px;
 			width: 20px;
 			height: 20px;
 			background-color: #f1ddc4;

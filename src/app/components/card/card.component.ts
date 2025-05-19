@@ -11,6 +11,7 @@ export class CardComponent {
   @Input() title!: string;
   @Input() subtitle!: string;
   @Input() text!: string;
+  @Input() url!: string;
   @Input() image?: string;
 
   getRandomNumber(): number {

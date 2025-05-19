@@ -9,12 +9,12 @@ import { ResumePageComponent } from './pages/resume-page/resume-page.component';
 export const routes: Routes = [
 	// Main pages
 	{ path: '', component: HomePageComponent, title: 'Valentin Chaillou' },
-	{ path: 'about', component: AboutPageComponent, title: "About" },
-	{ path: 'resume', component: ResumePageComponent, title: "Resume" },
+	// { path: 'about', component: AboutPageComponent, title: "About" },
+	// { path: 'resume', component: ResumePageComponent, title: "Resume" },
 	{ path: 'legals', component: LegalsPageComponent, title: 'Legals' },
 
 	// Projects pages
-	{ path: 'projects/:project-name', component: ProjectsPageComponent, title: 'Projects' },
+	// { path: 'projects/:project-name', component: ProjectsPageComponent, title: 'Projects' },
 
 	// Error pages
 	{ path: '**', component: NotFoundPageComponent, title: '404 Page not found' },
