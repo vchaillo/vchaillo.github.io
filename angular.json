@@ -18,7 +18,8 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist/vchaillo",
-            "baseHref": "/vchaillo/",
+            // "baseHref": "/vchaillo/",
+            "baseHref": "https://vchaillo.github.io/vchaillo/",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
