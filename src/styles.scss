@@ -3,7 +3,7 @@
 html {
 	padding: 0;
 	margin: 0;
-	background-image: url('/background-4.jpg');
+	background-image: url('/vchaillo/background-4.jpg');
 	object-fit: cover;
 	background-size: cover;
 }
@@ -36,4 +36,38 @@ a {
 .container-fluid {
 	padding: 1rem;
 	margin: auto;
+}
+
+@keyframes slideFadeInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.animated-slide-fade-in-left {
+	animation: slideFadeInLeft 1s ease forwards;
+	opacity: 0;
+}
+
+@keyframes slideFadeInDown {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.animated-slide-fade-in-down {
+	animation: slideFadeInDown 1s ease forwards;
+	opacity: 0;
 }

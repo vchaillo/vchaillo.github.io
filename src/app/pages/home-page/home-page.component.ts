@@ -56,11 +56,6 @@ export class HomePageComponent implements OnInit {
   ]
 
   ngOnInit(): void {
-    // Appel de l'API pour récupérer les données
-    this.fetchData();
-  }
-
-  fetchData() {
     this.apiService.getData().subscribe(response => {
       this.posts = response;
       console.log(this.posts);;
