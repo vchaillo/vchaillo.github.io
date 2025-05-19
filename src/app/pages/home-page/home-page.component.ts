@@ -1,64 +1,29 @@
-import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
-import { CardComponent } from '../../components/card/card.component';
-import { Project } from '../../models/project';
-import { ApiService } from '../../services/api.service';
+import { EducationComponent } from '../../components/education/education.component';
+import { ExperiencesComponent } from '../../components/experiences/experiences.component';
+import { ProjectsComponent } from '../../components/projects/projects.component';
+import { StackComponent } from '../../components/stack/stack.component';
 
 @Component({
   selector: 'app-home-page',
   standalone: true,
   imports: [
-    CardComponent,
-    CommonModule,
-    RouterLink,
-    RouterLinkActive,
+    StackComponent,
+    ProjectsComponent,
+    ExperiencesComponent,
+    EducationComponent,
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent implements OnInit {
-  posts: any[] = [];
-
-  constructor(private apiService: ApiService) { }
-
-  projects: Project[] = [
-    {
-      name: 'Les Fleuristes',
-      url: 'https://les-fleuristes.fr',
-      date: '2025',
-    },
-    {
-      name: 'Vélo Massif Morvan',
-      url: 'https://velomassifmorvan.fr',
-      date: '2013 à aujourd\'hui',
-    },
-    {
-      name: 'Geekzie',
-      url: 'https://geekzie.fr',
-      date: '2013',
-    },
-    {
-      name: 'MimXpressions',
-      url: 'https://vchaillo.github.io/mimes',
-      date: '2020',
-    },
-    {
-      name: 'Portfolio',
-      url: 'https://vchaillo.github.io/portfolio',
-      date: '2025',
-    },
-    {
-      name: 'Life calendar',
-      url: 'https://vchaillo.github.io/life-calendar',
-      date: '2025',
-    },
-  ]
+  // posts: any[] = [];
+  // constructor(private apiService: ApiService) { }
 
   ngOnInit(): void {
-    this.apiService.getData().subscribe(response => {
-      this.posts = response;
-      console.log(this.posts);;
-    });
+    // this.apiService.getData().subscribe(response => {
+    //   this.posts = response;
+    //   console.log(this.posts);;
+    // });
   }
 }

@@ -41,13 +41,20 @@ a {
 	margin: auto;
 }
 
-button {
+.title {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.button {
 	background-color: transparent;
 	border: none;
 	color: inherit;
 	font-family: inherit;
 	font-size: inherit;
 	cursor: pointer;
+	background-color: crimson;
+	color: #f1ddc4;
 
 	// &:hover {
 	// 	padding: 0.5rem;

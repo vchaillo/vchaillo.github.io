@@ -1,0 +1,10 @@
+.projects {
+	overflow-x: hidden;
+	scrollbar-width: none;
+
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		// transform: skew(3deg, 1deg);
+	}
+}

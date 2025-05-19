@@ -1,0 +1,11 @@
+<div class="projects">
+	<h2 class="title">_projects</h2>
+
+	<div class="cards">
+		@for (project of projects; track $index) {
+		<a routerLink="projects/{{ project.name }}" routerLinkActive="active is-active">
+			<app-card [title]="project.name" [subtitle]="project.date" [text]="project.url" [image]=""></app-card>
+		</a>
+		}
+	</div>
+</div>

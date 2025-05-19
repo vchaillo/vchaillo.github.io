@@ -1,0 +1,13 @@
+.stack {
+	.tools {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.tool {
+		background-color: crimson;
+		border-radius: 5px;
+		padding: 0.2rem;
+		margin: 0.2rem;
+	}
+}
