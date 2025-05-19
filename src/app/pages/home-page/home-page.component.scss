@@ -43,9 +43,10 @@
 	.schools {
 		display: flex;
 		flex-wrap: wrap;
+		// justify-content: space-around;
 
 		.school {
-			margin: 1rem;
+			padding: 0 3rem;
 		}
 	}
 }

@@ -1,6 +1,9 @@
+@use 'animations';
+
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
 
-html {
+html,
+body {
 	padding: 0;
 	margin: 0;
 	background-image: url('/vchaillo/background-4.jpg');
@@ -10,7 +13,7 @@ html {
 
 body {
 	font-family: 'Urbanist', sans-serif;
-	color: rgb(241, 221, 196);
+	color: #f1ddc4;
 }
 
 a {
@@ -38,36 +41,16 @@ a {
 	margin: auto;
 }
 
-@keyframes slideFadeInLeft {
-	from {
-		opacity: 0;
-		transform: translateX(-50px);
-	}
+button {
+	background-color: transparent;
+	border: none;
+	color: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	cursor: pointer;
 
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-
-.animated-slide-fade-in-left {
-	animation: slideFadeInLeft 1s ease forwards;
-	opacity: 0;
-}
-
-@keyframes slideFadeInDown {
-	from {
-		opacity: 0;
-		transform: translateY(50px);
-	}
-
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
-}
-
-.animated-slide-fade-in-down {
-	animation: slideFadeInDown 1s ease forwards;
-	opacity: 0;
+	// &:hover {
+	// 	padding: 0.5rem;
+	// 	background-color: #f1ddc4;
+	// }
 }

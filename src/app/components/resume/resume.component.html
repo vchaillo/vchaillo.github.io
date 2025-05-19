@@ -1,0 +1,16 @@
+<a (click)="toggleResume()">Resume</a>
+
+@if (resumeIsOpen) {
+<div class="resume">
+	<a (click)="closeResume()" class="close-mark"><i class="fa-solid fa-xmark"></i></a>
+	<img class="animated-zoom-fade-in-back" src="valentin_chaillou.png" alt="resume">
+	<div class="resume-toolbar animated-slide-fade-in-down">
+		<a href="/vchaillo/valentin_chaillou.pdf" download="vchaillo/valentin_chaillou.pdf">
+			<i class="fa-solid fa-file-pdf"></i>
+		</a>
+		<a href="/vchaillo/valentin_chaillou.png" download="vchaillo/valentin_chaillou.png">
+			<i class="fa-solid fa-image"></i>
+		</a>
+	</div>
+</div>
+}
