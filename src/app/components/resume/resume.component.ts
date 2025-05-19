@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrl: './resume.component.scss'
 })
 export class ResumeComponent implements OnInit {
-  resumeIsOpen = true;
+  resumeIsOpen = false;
 
   ngOnInit() {
     document.addEventListener('keydown', this.handleKeydown);
