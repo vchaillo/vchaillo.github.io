@@ -4,9 +4,9 @@
 
 ### [Bento page](https://bento.me/vchaillo)
 
-[![Anurag's GitHub stats](https://github-readme-stats-green-rho-54.vercel.app/api?username=vchaillo&show_icons=true&theme=yeblu&title_color=C5F20C&icons_color=C5F20C)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats-green-rho-54.vercel.app/api?username=vchaillo&show_icons=true&hide_border=true&theme=yeblu&title_color=C5F20C&icons_color=C5F20C)](https://github.com/anuraghazra/github-readme-stats)
 
-[![Top Langs](https://github-readme-stats-green-rho-54.vercel.app/api/top-langs/?username=vchaillo&theme=yeblu&title_color=C5F20C&icons_color=C5F20C)](https://github.com/anuraghazra/github-readme-stats)
+[![Top Langs](https://github-readme-stats-green-rho-54.vercel.app/api/top-langs/?username=vchaillo&hide_border=true&theme=yeblu&title_color=C5F20C&icons_color=C5F20C)](https://github.com/anuraghazra/github-readme-stats)
 
 <!--
 **vchaillo/vchaillo** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
