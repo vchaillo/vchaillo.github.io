@@ -18,7 +18,7 @@ import { ApiService } from '../../services/api.service';
   styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent implements OnInit {
-  data: any;
+  posts: any[] = [];
 
   constructor(private apiService: ApiService) { }
 
@@ -62,8 +62,8 @@ export class HomePageComponent implements OnInit {
 
   fetchData() {
     this.apiService.getData().subscribe(response => {
-      this.data = response;
-      console.log(this.data);
+      this.posts = response;
+      console.log(this.posts);;
     });
   }
 }
