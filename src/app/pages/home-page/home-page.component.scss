@@ -1,0 +1,51 @@
+.name {
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.title {
+	font-size: 3rem;
+	font-weight: bold;
+}
+
+.description {
+	font-weight: normal;
+	font-style: italic;
+	max-width: 50rem;
+}
+
+.projects {
+	overflow-x: hidden;
+	scrollbar-width: none;
+
+	.cards {
+		display: flex;
+		flex-wrap: wrap;
+		// transform: skew(3deg, 1deg);
+	}
+}
+
+.stack {
+	.tools {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.tool {
+		background-color: crimson;
+		border-radius: 5px;
+		padding: 0.2rem;
+		margin: 0.2rem;
+	}
+}
+
+.education {
+	.schools {
+		display: flex;
+		flex-wrap: wrap;
+
+		.school {
+			margin: 1rem;
+		}
+	}
+}

@@ -1,1 +1,99 @@
-<p>home-page works!</p>
+<div class="container">
+	<h1 class="name">Valentin Chaillou</h1>
+
+	<h2 class="description">
+		I'm a Fullstack web developer with an atypical background and a passion for clean code, solid
+		architecture, and thoughtful design.
+		<br>
+		I enjoy building well-structured applications with attention to both
+		functionality and user experience.
+	</h2>
+</div>
+
+<div class="container">
+	<div class="stack">
+		<h2 class="title">_stack</h2>
+		<div class="tools">
+			<div class="tool">Html</div>
+			<div class="tool">Css</div>
+			<div class="tool">Scss</div>
+			<div class="tool">Javascript</div>
+			<div class="tool">Typescript</div>
+		</div>
+
+		<div class="tools">
+			<div class="tool">Git</div>
+			<div class="tool">Github</div>
+			<div class="tool">Github actions</div>
+		</div>
+
+		<div class="tools">
+			<div class="tool">Angular</div>
+			<div class="tool">React</div>
+			<div class="tool">Vue</div>
+			<div class="tool">NodeJS</div>
+			<div class="tool">Express</div>
+		</div>
+
+		<div class="tools">
+			<div class="tool">Php</div>
+			<div class="tool">Laravel</div>
+		</div>
+
+		<div class="tools">
+			<div class="tool">Ruby</div>
+			<div class="tool">Ruby on Rails</div>
+		</div>
+	</div>
+</div>
+
+<div class="projects">
+	<div class="container">
+		<h2 class="title">_projects</h2>
+	</div>
+
+	<div class="container-fluid">
+		<div class="cards">
+			@for (project of projects; track $index) {
+			<a routerLink="projects/{{ project.name }}" routerLinkActive="active is-active">
+				<app-card [title]="project.name" [subtitle]="project.date" [text]="project.url" [image]=""></app-card>
+			</a>
+			}
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="experiences">
+		<h2 class="title">_experiences</h2>
+	</div>
+</div>
+
+<div class="container">
+	<div class="education">
+		<h2 class="title">_education</h2>
+
+		<div class="schools">
+
+			<div class="school">
+				<h3>École 42</h3>
+				<p>Architecte en technologie du Numérique</p>
+				<ul>
+					<li>Graphics</li>
+					<li>Unix System</li>
+					<li>Algorithmique</li>
+					<li>Sécurité</li>
+					<li>Fullstack web</li>
+				</ul>
+			</div>
+
+			<div class="school">
+				<h3>Université Pierre et Marie Curie</h3>
+				<p>DAEU B Scientifique</p>
+				<ul>
+					<li>Obtenu avec mention très bien</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
