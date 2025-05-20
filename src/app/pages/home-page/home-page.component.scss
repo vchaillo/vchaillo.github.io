@@ -5,8 +5,13 @@
 
 .description {
 	font-weight: normal;
-	font-style: italic;
-	max-width: 50rem;
+	// font-style: italic;
+	// max-width: 50rem;
+
+	background-color: crimson;
+	color: #f1ddc4;
+	padding: 5rem;
+	transform: skew(-3deg, -2deg);
 }
 
 .presentation {
