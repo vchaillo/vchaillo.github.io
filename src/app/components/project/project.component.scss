@@ -148,4 +148,14 @@
 		top: 50%;
 		right: 2rem;
 	}
+
+	@media (max-width: variables.$mobile-breakpoint) {
+		.fa-chevron-left {
+			left: 0.3rem;
+		}
+
+		.fa-chevron-right {
+			right: 1.3rem;
+		}
+	}
 }

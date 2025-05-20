@@ -22,6 +22,22 @@ p {
 	font-size: 1.1rem;
 }
 
+.label {
+	background-color: variables.$contrast-color;
+	color: variables.$main-color;
+	padding: 0.4rem 0.4rem;
+	margin: 0.25rem;
+	font-weight: bold;
+	transform: skew(-3deg, -2deg);
+}
+
+.code {
+	font-family: 'Consolas';
+	// background-color: variables.$main-color;
+	color: variables.$dark-color;
+	padding: 0 0.2rem;
+}
+
 .container {
 	padding: 0 2rem;
 	max-width: 120rem;

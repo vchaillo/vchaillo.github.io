@@ -1,9 +1,9 @@
 @use '../../../variables' as variables;
 
-.name {
-	font-size: 4rem;
-	font-weight: bold;
-}
+// .name {
+// 	font-size: 4rem;
+// 	font-weight: bold;
+// }
 
 .description {
 	font-weight: normal;
@@ -14,6 +14,12 @@
 	margin: auto;
 	margin-top: 10rem;
 	max-width: 90rem;
+	transition: all 0.2s ease-in-out;
+
+	@media (max-width: variables.$mobile-breakpoint) {
+		margin-top: 0rem;
+		padding: 2rem;
+	}
 }
 
 .presentation {

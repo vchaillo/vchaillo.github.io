@@ -29,21 +29,14 @@ header {
 				transition: all 0.5s ease-in-out;
 				white-space: wrap;
 				margin-right: 0;
+				font-size: 1.5rem;
+				// transform: skew(-3deg, -2deg);
+
 				// position: relative;
 				// z-index: 4243;
-
-				&::before {
-					content: '_';
-					color: transparent;
-					transition: all 0.5s ease-in-out;
-				}
-
-				&:hover {
-					color: inherit;
-				}
-
 				@media (max-width: variables.$mobile-breakpoint) {
 					transform: none;
+					transform: skew(-3deg, -2deg);
 
 					&::before {
 						content: '_';
@@ -56,8 +49,19 @@ header {
 					}
 				}
 
+				&::before {
+					content: '_';
+					color: transparent;
+					transition: all 0.5s ease-in-out;
+				}
+
+				&:hover {
+					color: inherit;
+				}
+
 				&.shrink {
 					transform: none;
+					transform: skew(-3deg, -2deg);
 
 					&::before {
 						content: '_';
