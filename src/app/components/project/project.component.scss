@@ -1,8 +1,8 @@
 .project {
 	border: 7px solid crimson;
-	height: 20rem;
+	// height: 20rem;
 	width: 18rem;
-	margin: 0.5rem 7px;
+	margin: auto;
 	color: #f1ddc4;
 	// color: black;
 	transition: transform 0.3s ease;
@@ -31,10 +31,19 @@
 
 	.project-body {
 		padding: 0.5rem 1rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	&.open {
 		background-color: crimson;
 		color: #f1ddc4;
+	}
+
+	@media (hover: none) {
+		&:hover {
+			transform: none;
+		}
 	}
 }

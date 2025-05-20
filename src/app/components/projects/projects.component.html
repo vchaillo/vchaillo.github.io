@@ -1,9 +1,7 @@
-<div class="projects">
-	<h2 class="title"><span class="crimson">_</span>projects</h2>
+<h2 class="title"><span class="crimson">_</span>projects</h2>
 
-	<div class="cards">
-		@for (project of projects; track $index) {
-		<app-project [project]="project" />
-		}
-	</div>
+<div class="projects">
+	@for (project of projects; track $index) {
+	<app-project [project]="project" />
+	}
 </div>
