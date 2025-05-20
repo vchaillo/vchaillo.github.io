@@ -1,9 +1,11 @@
+@use '../../../variables' as variables;
+
 .project {
-	border: 7px solid crimson;
+	border: 7px solid variables.$contrast-color;
 	// height: 20rem;
 	width: 18rem;
 	margin: auto;
-	color: #f1ddc4;
+	color: variables.$main-color;
 	// color: black;
 	transition: transform 0.3s ease;
 	cursor: pointer;
@@ -37,13 +39,7 @@
 	}
 
 	&.open {
-		background-color: crimson;
-		color: #f1ddc4;
-	}
-
-	@media (hover: none) {
-		&:hover {
-			transform: none;
-		}
+		background-color: variables.$contrast-color;
+		color: variables.$main-color;
 	}
 }

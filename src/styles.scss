@@ -1,4 +1,5 @@
 @use 'animations';
+@use 'variables' as variables;
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
 
@@ -9,7 +10,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Urbanist', sans-serif;
-	color: #f1ddc4;
+	color: variables.$main-color;
 }
 
 a {
@@ -40,8 +41,8 @@ a {
 	font-family: inherit;
 	font-size: inherit;
 	cursor: pointer;
-	background-color: crimson;
-	color: #f1ddc4;
+	background-color: variables.$contrast-color;
+	color: variables.$main-color;
 
 	// &:hover {
 	// 	padding: 0.5rem;
@@ -51,11 +52,11 @@ a {
 
 @keyframes blinkPrompt {
 	0% {
-		background-color: crimson;
+		background-color: variables.$contrast-color;
 	}
 
 	50% {
-		background-color: crimson;
+		background-color: variables.$contrast-color;
 	}
 
 	51% {
@@ -63,7 +64,7 @@ a {
 	}
 }
 
-.crimson {
+.contrast {
 	// animation: blinkPrompt 2s infinite
-	color: crimson;
+	color: variables.$contrast-color;
 }

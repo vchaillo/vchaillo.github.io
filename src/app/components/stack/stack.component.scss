@@ -1,3 +1,5 @@
+@use '../../../variables' as variables;
+
 .stack {
 	margin-bottom: 5rem;
 
@@ -7,11 +9,10 @@
 	}
 
 	.tool {
-		background-color: crimson;
-		// border-radius: 5px;
+		background-color: variables.$contrast-color;
 		padding: 0.4rem;
 		margin: 0.2rem;
-    font-weight: bold;
-    transform: skew(-3deg, -2deg);
+		font-weight: bold;
+		transform: skew(-3deg, -2deg);
 	}
 }

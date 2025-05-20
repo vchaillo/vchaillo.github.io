@@ -15,19 +15,19 @@ export class ProjectsComponent {
       name: 'Les Fleuristes',
       url: 'https://les-fleuristes.fr',
       date: '2025',
-      image: 'projects/les-fleuristes.webp',
+      image: 'projects/les-fleuristes.png',
     },
     {
       name: 'Vélo Massif Morvan',
       url: 'https://velomassifmorvan.fr',
       date: '2013 - today',
-      image: 'projects/velomassifmorvan.jpg',
+      image: 'projects/velomassifmorvan.png',
     },
     {
       name: 'Geekzie',
       url: 'https://geekzie.fr',
       date: '2015 - 2018',
-      image: 'https://picsum.photos/id/0/600/400',
+      image: 'projects/geekzie.png',
     },
     {
       name: 'MimXpressions',

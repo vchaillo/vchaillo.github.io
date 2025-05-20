@@ -1,3 +1,5 @@
+@use '../../../variables' as variables;
+
 header {
 	padding: 1.5rem;
 	position: sticky;
@@ -32,7 +34,7 @@ header {
 
 			&:hover {
 				transform: scale(1.5) rotate(5deg);
-				color: crimson;
+				color: variables.$contrast-color;
 				transition: all 0.2s ease-in-out;
 			}
 		}
