@@ -1,0 +1,19 @@
+@use '../../../variables' as variables;
+
+.stack {
+	margin-bottom: 2rem;
+
+	.tools {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.tool {
+		background-color: variables.$contrast-color;
+		color: variables.$main-color;
+		padding: 0.4rem 0.4rem;
+		margin: 0.25rem;
+		font-weight: bold;
+		transform: skew(-3deg, -2deg);
+	}
+}

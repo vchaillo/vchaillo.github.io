@@ -2,7 +2,6 @@
 
 .project {
 	border: 7px solid variables.$contrast-color;
-	// height: 20rem;
 	width: 16rem;
 	margin: auto;
 	color: variables.$main-color;
@@ -37,9 +36,116 @@
 		flex-direction: column;
 		justify-content: space-between;
 	}
+}
 
-	&.open {
-		background-color: variables.$contrast-color;
-		color: variables.$main-color;
+.project-fullscreen {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	min-height: 100vh;
+	z-index: 424242;
+	background-color: variables.$main-color;
+	color: variables.$dark-color;
+	animation-duration: 0.2s;
+	// animation: slideInScreenDown 0.2s ease-out forwards;
+
+	.container {
+		display: flex;
+		margin: 4rem 0;
+		justify-content: space-around;
+		align-items: center;
+		flex-wrap: wrap-reverse;
+
+		@media (max-width: variables.$mobile-breakpoint) {
+			padding: 0 1rem;
+		}
+	}
+
+	.project-fullscreen-image {
+		border: 7px solid variables.$dark-color;
+		transform: skew(3deg, 2deg);
+		margin: 0 2rem;
+
+		img {
+			width: 100%;
+			max-width: 30rem;
+			transform: skew(-3deg, -2deg);
+
+			@media (max-width: variables.$mobile-breakpoint) {
+				// max-width: 100%;
+				// transform: scale(1.4) rotate(-2deg);
+				transform: skew(3deg, 2deg);
+				// height: 13rem;
+			}
+		}
+	}
+
+	.project-fullscreen-body {
+		max-width: 30rem;
+		padding: 2rem;
+
+		.project-fullscreen-name {
+			font-size: 3rem;
+		}
+
+		.project-fullscreen-description {
+			font-size: 1.2rem;
+			// margin: 2rem 0;
+		}
+
+		.project-fullscreen-date {
+			transform: skew(-3deg, -2deg);
+			background-color: variables.$dark-color;
+			color: variables.$main-color;
+			width: fit-content;
+			padding: 10px;
+		}
+
+		.project-fullscreen-url {
+			font-size: 1.5rem;
+			font-weight: bold;
+			transition: all 0.2s ease-in-out;
+			text-decoration: dashed;
+
+			&:hover {
+				margin-left: (1rem);
+			}
+		}
+	}
+
+	.fa-solid {
+		// color: variables.$white;
+		position: absolute;
+		cursor: pointer;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: bold;
+		width: 2rem;
+		height: 2rem;
+		transition: all 0.2s ease-in-out;
+
+		&:hover {
+			transform: skew(-3deg, -2deg);
+		}
+
+		&::before {
+			vertical-align: -1.3rem;
+		}
+	}
+
+	.fa-xmark {
+		// top: 0.5rem;
+		right: 2rem;
+	}
+
+	.fa-chevron-left {
+		top: 50%;
+		left: 1rem;
+	}
+
+	.fa-chevron-right {
+		top: 50%;
+		right: 2rem;
 	}
 }

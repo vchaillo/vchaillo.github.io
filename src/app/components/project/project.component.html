@@ -1,12 +1,37 @@
-<div class="project" [class.open]="isOpen" (click)="openProject()">
+<div class="project" (click)="openProject()">
+
 	<div class="project-image">
 		<img src="{{ project.image }}" alt="" />
 	</div>
 	<div class="project-body">
-		<h3 class="project-title">{{ project.name }}</h3>
-		<p class="project-subtitle">{{ project.date }}</p>
+		<h3 class="project-name">{{ project.name }}</h3>
+		<p class="project-date">{{ project.date }}</p>
 		@if (project.url) {
 		<!-- <small class="card-url">{{ project.url }}</small> -->
 		}
 	</div>
 </div>
+
+@if (isOpen) {
+<div class="project-fullscreen">
+	<a (click)="closeProject($event)"><i class="fa-solid fa-xmark"></i></a>
+	<a (click)="nextProject($event)"><i class="fa-solid fa-chevron-left"></i></a>
+	<a (click)="nextProject($event)"><i class="fa-solid fa-chevron-right"></i></a>
+
+	<div class="container">
+		<div class="project-fullscreen-body">
+			<h1 class="project-fullscreen-name">{{ project.name }}</h1>
+			<h3 class="project-fullscreen-date">{{ project.date }}</h3>
+			<p class="project-fullscreen-description">{{ project.description }}</p>
+
+			<app-project-stack [stack]="project.stack" />
+			<a class="project-fullscreen-url" [href]="project.url" target="_blank">
+				_Visit website
+			</a>
+		</div>
+		<div class="project-fullscreen-image">
+			<img src="{{ project.image }}" alt="" />
+		</div>
+	</div>
+</div>
+}

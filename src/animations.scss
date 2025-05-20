@@ -17,6 +17,8 @@
 	opacity: 0;
 }
 
+//////////////////////////////////////////////////////////////////////////////
+
 @keyframes slideFadeInDown {
 	from {
 		opacity: 0;
@@ -33,6 +35,8 @@
 	animation: slideFadeInDown 0.5s ease-out forwards;
 	opacity: 0;
 }
+
+//////////////////////////////////////////////////////////////////////////////
 
 @keyframes slideFadeInUp {
 	from {
@@ -51,6 +55,8 @@
 	// opacity: 0;
 }
 
+//////////////////////////////////////////////////////////////////////////////
+
 @keyframes zoomFadeInBack {
 	from {
 		opacity: 0;
@@ -68,6 +74,8 @@
 	opacity: 0;
 }
 
+//////////////////////////////////////////////////////////////////////////////
+
 @keyframes slideInLeft {
 	from {
 		transform: translateX(-200px);
@@ -82,6 +90,8 @@
 	animation: slideInLeft 1s ease-out forwards;
 }
 
+//////////////////////////////////////////////////////////////////////////////
+/// 
 @keyframes blinkPrompt {
 	0% {
 		background-color: variables.$contrast-color;
@@ -98,4 +108,86 @@
 
 .animated-blink-prompt {
 	animation: blinkPrompt 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideInScreenLeft {
+	0% {
+		left: -100vw;
+	}
+
+	100% {
+		left: 0;
+	}
+
+
+}
+
+.animated-slide-in-screen-left {
+	animation: slideInScreenLeft 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideOutScreenLeft {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: -100vw;
+	}
+}
+
+.animated-slide-out-screen-left {
+	animation: slideOutScreenLeft 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideInScreenDown {
+	0% {
+		top: -100vh;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+.animated-slide-in-screen-down {
+	animation: slideInScreenDown 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideOutScreenDown {
+	0% {
+		top: 0;
+	}
+
+	100% {
+		top: 100vh;
+	}
+}
+
+.animated-slide-out-screen-down {
+	animation: slideOutScreenDown 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideOutScreenRight {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 100vw;
+	}
+}
+
+.animated-slide-out-screen-right {
+	animation: slideOutScreenRight 1s ease-out forwards;
 }
