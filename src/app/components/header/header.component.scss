@@ -3,18 +3,43 @@ header {
 	position: sticky;
 	z-index: 4242;
 	top: 0;
+	backdrop-filter: blur(10px);
+	// background-color: rgba(0, 0, 5, 0.1);
 
 	nav {
 		display: flex;
 		justify-content: space-between;
+		font-size: 1.2rem;
 
 		.right {
 			display: flex;
 			align-items: center;
 		}
 
+		.left {
+			a:hover {
+				transform: scale(1.1) rotate(-2deg);
+			}
+		}
+
 		a {
-			margin-left: 0.5rem;
+			display: inline-block;
+			margin-left: 1rem;
+			transition: all 0.2s ease-in-out;
+
+			&:first-child {
+				margin-left: 0;
+
+				&:hover {
+					color: inherit;
+				}
+			}
+
+			&:hover {
+				transform: scale(1.5) rotate(5deg);
+				color: crimson;
+				transition: all 0.2s ease-in-out;
+			}
 		}
 	}
 }

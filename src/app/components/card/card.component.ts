@@ -14,7 +14,9 @@ export class CardComponent {
   @Input() url!: string;
   @Input() image?: string;
 
-  getRandomNumber(): number {
-    return Math.floor(Math.random() * 100) + 1;
+  cardIsOpen: boolean = false;
+
+  openCard(): void {
+    this.cardIsOpen = !this.cardIsOpen;
   }
 }

@@ -2,20 +2,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
 
-html {
-	background-image: url('/vchaillo/background-4.jpg');
+body {
+	background-image: url('/vchaillo/backgrounds/background-10.jpg');
 	object-fit: cover;
 	background-size: cover;
-	backdrop-filter: blur(30px);
-}
-
-body {
 	padding: 0;
 	margin: 0;
-}
-
-
-body {
 	font-family: 'Urbanist', sans-serif;
 	color: #f1ddc4;
 }
@@ -23,15 +15,6 @@ body {
 a {
 	text-decoration: none;
 	color: inherit;
-
-	&:hover {
-		text-decoration: underline;
-	}
-
-	&.active {
-		// text-decoration: underline;
-		font-weight: bold;
-	}
 }
 
 .container {
@@ -64,4 +47,23 @@ a {
 	// 	padding: 0.5rem;
 	// 	background-color: #f1ddc4;
 	// }
+}
+
+@keyframes blinkPrompt {
+	0% {
+		background-color: crimson;
+	}
+
+	50% {
+		background-color: crimson;
+	}
+
+	51% {
+		background-color: transparent;
+	}
+}
+
+.crimson {
+	// animation: blinkPrompt 2s infinite
+	color: crimson;
 }

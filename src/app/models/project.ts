@@ -4,6 +4,5 @@ export class Project {
 		public url: string,
 		public date: string,
 		public image?: string,
-		public color?: string,
 	) { }
 }

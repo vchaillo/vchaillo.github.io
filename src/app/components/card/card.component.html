@@ -1,6 +1,6 @@
-<div class="card">
+<div class="card" [class.open]="cardIsOpen" (click)="openCard()">
 	<div class="card-image">
-		<img src="{{ image ? image : 'https://picsum.photos/600/400' }}" alt="" />
+		<img src="{{ image }}" alt="" />
 	</div>
 	<div class="card-body">
 		<h3 class="card-title">{{ title }}</h3>

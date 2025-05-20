@@ -3,9 +3,9 @@
 	// border-radius: 15px;
 	// box-shadow: 0px 5px 10px 0px #c4c5c5;
 	height: 20rem;
-	width: 15rem;
+	width: 18rem;
 	margin: 0.5rem 7px;
-	background-color: white;
+	background-color: #f1ddc4;
 	color: black;
 	transition: all 0.3s ease;
 	cursor: pointer;
@@ -19,10 +19,6 @@
 				filter: grayscale(0%);
 			}
 		}
-
-		.card-title {
-			color: crimson;
-		}
 	}
 
 	.card-image {
@@ -31,12 +27,15 @@
 			height: 10rem;
 			object-fit: cover;
 			filter: grayscale(100%);
+			transition: all 0.3s ease;
 		}
 	}
 
 	.card-body {
 		padding: 0.5rem 1rem;
+	}
 
-
+	&.open {
+		background-color: goldenrod;
 	}
 }

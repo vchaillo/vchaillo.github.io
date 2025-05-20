@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { RouterLink, RouterLinkActive } from '@angular/router';
 import { Project } from '../../models/project';
 import { CardComponent } from '../card/card.component';
 
@@ -8,8 +7,6 @@ import { CardComponent } from '../card/card.component';
   standalone: true,
   imports: [
     CardComponent,
-    RouterLink,
-    RouterLinkActive,
   ],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
@@ -20,13 +17,13 @@ export class ProjectsComponent {
       name: 'Les Fleuristes',
       url: 'https://les-fleuristes.fr',
       date: '2025',
-      image: 'les-fleuristes.webp',
+      image: 'projects/les-fleuristes.webp',
     },
     {
       name: 'Vélo Massif Morvan',
       url: 'https://velomassifmorvan.fr',
       date: '2013 à aujourd\'hui',
-      image: 'velomassifmorvan.jpg',
+      image: 'projects/velomassifmorvan.jpg',
     },
     {
       name: 'Geekzie',
@@ -38,13 +35,13 @@ export class ProjectsComponent {
       name: 'MimXpressions',
       url: 'https://vchaillo.github.io/mimes',
       date: '2020',
-      image: 'mimes.png',
+      image: 'projects/mimes.png',
     },
     {
       name: 'Life calendar',
       url: 'https://vchaillo.github.io/life-calendar',
       date: '2025',
-      image: 'life-calendar.png',
+      image: 'projects/life-calendar.png',
     },
   ]
 }
