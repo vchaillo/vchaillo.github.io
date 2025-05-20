@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { EducationComponent } from '../../components/education/education.component';
 import { ExperiencesComponent } from '../../components/experiences/experiences.component';
 import { ProjectsComponent } from '../../components/projects/projects.component';
 import { StackComponent } from '../../components/stack/stack.component';
+import { StudiesComponent } from '../../components/studies/studies.component';
 
 @Component({
   selector: 'app-home-page',
@@ -11,7 +11,7 @@ import { StackComponent } from '../../components/stack/stack.component';
     StackComponent,
     ProjectsComponent,
     ExperiencesComponent,
-    EducationComponent,
+    StudiesComponent,
   ],
   templateUrl: './home-page.component.html',
   styleUrl: './home-page.component.scss'
