@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
 import { Project } from '../../models/project';
-import { CardComponent } from '../card/card.component';
+import { ProjectComponent } from '../project/project.component';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [
-    CardComponent,
-  ],
+  imports: [ProjectComponent],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss'
 })
@@ -22,13 +20,13 @@ export class ProjectsComponent {
     {
       name: 'Vélo Massif Morvan',
       url: 'https://velomassifmorvan.fr',
-      date: '2013 à aujourd\'hui',
+      date: '2013 - today',
       image: 'projects/velomassifmorvan.jpg',
     },
     {
       name: 'Geekzie',
       url: 'https://geekzie.fr',
-      date: '2013',
+      date: '2015 - 2018',
       image: 'https://picsum.photos/id/0/600/400',
     },
     {
@@ -42,6 +40,12 @@ export class ProjectsComponent {
       url: 'https://vchaillo.github.io/life-calendar',
       date: '2025',
       image: 'projects/life-calendar.png',
+    },
+    {
+      name: 'Timelines',
+      url: 'https://vchaillo.github.io/timelines',
+      date: '2025',
+      image: 'projects/timelines.png',
     },
   ]
 }

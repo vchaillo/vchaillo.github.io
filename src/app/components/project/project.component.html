@@ -1,0 +1,12 @@
+<div class="project" [class.open]="isOpen" (click)="openProject()">
+	<div class="project-image">
+		<img src="{{ project.image }}" alt="" />
+	</div>
+	<div class="project-body">
+		<h3 class="project-title">{{ project.name }}</h3>
+		<p class="project-subtitle">{{ project.date }}</p>
+		@if (project.url) {
+		<!-- <small class="card-url">{{ project.url }}</small> -->
+		}
+	</div>
+</div>

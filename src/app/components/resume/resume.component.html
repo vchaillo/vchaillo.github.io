@@ -1,7 +1,7 @@
 <a (click)="toggleResume()"><i class="fa-solid fa-print"></i></a>
 
 @if (resumeIsOpen) {
-<div class="resume">
+<div class="resume" (click)="closeResume()">
 	<a (click)="closeResume()" class="close-mark"><i class="fa-solid fa-xmark"></i></a>
 	<img class="animated-zoom-fade-in-back" src="valentin_chaillou.png" alt="resume">
 	<div class="resume-toolbar animated-slide-fade-in-down">
