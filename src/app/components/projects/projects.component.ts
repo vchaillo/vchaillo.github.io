@@ -24,10 +24,10 @@ export class ProjectsComponent {
       image: 'projects/velomassifmorvan.png',
     },
     {
-      name: 'Geekzie',
-      url: 'https://geekzie.fr',
-      date: '2015 - 2018',
-      image: 'projects/geekzie.png',
+      name: 'Life calendar',
+      url: 'https://vchaillo.github.io/life-calendar',
+      date: '2025',
+      image: 'projects/life-calendar.png',
     },
     {
       name: 'MimXpressions',
@@ -36,16 +36,18 @@ export class ProjectsComponent {
       image: 'projects/mimes.png',
     },
     {
-      name: 'Life calendar',
-      url: 'https://vchaillo.github.io/life-calendar',
-      date: '2025',
-      image: 'projects/life-calendar.png',
-    },
-    {
       name: 'Timelines',
       url: 'https://vchaillo.github.io/timelines',
       date: '2025',
       image: 'projects/timelines.png',
     },
+    {
+      name: 'Geekzie',
+      url: 'https://geekzie.fr',
+      date: '2015 - 2018',
+      image: 'projects/geekzie.png',
+
+    },
+
   ]
 }
