@@ -1,20 +1,22 @@
+@use '../../../variables' as variables;
+
 .projects {
 	display: grid;
 	width: fit-content;
 	gap: 1rem;
 	grid-template-columns: repeat(6, 1fr);
 
-	@media (max-width: 2000px) {
+	@media (max-width: variables.$fullhd-breakpoint) {
 		grid-template-columns: repeat(3, 1fr);
 		margin: auto;
 	}
 
-	@media (max-width: 1024px) {
+	@media (max-width: variables.$tablet-breakpoint) {
 		grid-template-columns: repeat(2, 1fr);
 		margin: auto;
 	}
 
-	@media (max-width: 720px) {
+	@media (max-width: variables.$mobile-breakpoint) {
 		grid-template-columns: 1fr;
 	}
 }

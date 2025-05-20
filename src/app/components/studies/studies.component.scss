@@ -3,10 +3,17 @@
 
 	.schools {
 		display: flex;
+		justify-content: space-between;
 		flex-wrap: wrap;
 
 		.school {
 			padding-right: 3rem;
+			margin-bottom: 2rem;
+
+			h2 {
+				margin-top: 0;
+			}
+
 		}
 	}
 }

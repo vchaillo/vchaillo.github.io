@@ -6,7 +6,7 @@
 		border-left: 3px solid variables.$main-color;
 		padding: 1rem 0;
 		padding-left: 2rem;
-		margin-right: 1rem;
+		margin-right: 3rem;
 		position: relative;
 		top: 0;
 		left: 0;
@@ -17,6 +17,7 @@
 
 			li {
 				font-size: 1.1rem;
+				max-width: 30rem;
 
 				&:before {
 					content: '- ';
