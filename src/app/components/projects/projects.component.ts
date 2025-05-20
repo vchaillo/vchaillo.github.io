@@ -11,7 +11,7 @@ import { ProjectComponent } from '../project/project.component';
 })
 export class ProjectsComponent {
 
-  fullScreenProject: Project | null = null;
+  // fullScreenProject: Project | null = null;
   currentIndex: number | null = null;
 
   projects: Project[] = [
@@ -65,28 +65,39 @@ export class ProjectsComponent {
     },
   ]
 
-  previousProject(index: number) {
-    console.log('change ! index', index);
+  entrance: 'down' | 'left' | 'right' = 'down';
 
-    if (this.currentIndex && this.currentIndex > 0) {
+  setCurrentIndex(index: number) {
+    this.currentIndex = index;
+  }
+
+  closeProject() {
+    this.entrance = 'down';
+    this.currentIndex = null;
+  }
+
+  previousProject(index: number) {
+    if (this.currentIndex !== null && this.currentIndex > 0) {
       this.currentIndex--;
     } else {
       this.currentIndex = this.projects.length - 1;
     }
-    console.log('currentIndex', this.currentIndex);
 
-    this.fullScreenProject = this.projects[this.currentIndex];
+    console.log('this.currentIndex : ', this.currentIndex);
+
+    this.entrance = 'left';
   }
 
   nextProject(index: number) {
-    console.log('index', index);
-
     if (this.currentIndex !== null && this.currentIndex < this.projects.length - 1) {
       this.currentIndex++;
     } else {
       this.currentIndex = 0;
     }
 
-    this.fullScreenProject = this.projects[this.currentIndex];
+    console.log('this.currentIndex : ', this.currentIndex);
+
+    this.entrance = 'right';
   }
+
 }

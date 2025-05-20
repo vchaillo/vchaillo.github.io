@@ -42,6 +42,20 @@ header {
 					color: inherit;
 				}
 
+				@media (max-width: variables.$mobile-breakpoint) {
+					transform: none;
+
+					&::before {
+						content: '_';
+						color: variables.$contrast-color;
+					}
+
+					&:hover {
+						transform: scale(1.1) rotate(-2deg);
+						transition-duration: 0.2s;
+					}
+				}
+
 				&.shrink {
 					transform: none;
 

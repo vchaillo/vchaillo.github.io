@@ -17,6 +17,7 @@ export class ProjectComponent {
 
   @Output() goToNextProject = new EventEmitter<number>();
   @Output() goToPreviousProject = new EventEmitter<number>();
+  @Output() doCloseProject = new EventEmitter<number>();
 
   projectFullScreenElement!: HTMLElement;
 
@@ -29,81 +30,68 @@ export class ProjectComponent {
     this.isOpen = true;
     console.log('open ! index', this.index);
 
-    // this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
-    let projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
+    setTimeout(() => {
+      this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
 
-    if (projectFullScreenElement) {
+      if (this.projectFullScreenElement) {
 
-      let className = 'animated-slide-in-screen-down';
+        let className = 'animated-slide-in-screen-down';
 
-      switch (this.entrance) {
-        case 'left':
-          className = 'animated-slide-in-screen-left';
-          break;
-        case 'right':
-          className = 'animated-slide-in-screen-right';
-          break;
-        case 'down':
-          className = 'animated-slide-in-screen-down';
-          break;
+        switch (this.entrance) {
+          case 'left':
+            className = 'animated-slide-in-screen-left';
+            break;
+          case 'right':
+            className = 'animated-slide-in-screen-right';
+            break;
+          case 'down':
+            className = 'animated-slide-in-screen-down';
+            break;
+        }
+
+        this.projectFullScreenElement.classList.add(className);
+        setTimeout(() => {
+          this.projectFullScreenElement.classList.remove(className);
+        }, 200);
       }
-
-      console.log('open ! className', className);
-
-      projectFullScreenElement.classList.add(className);
-      setTimeout(() => {
-        projectFullScreenElement.classList.remove(className);
-      }, 1000);
-    }
+    }, 20);
   }
 
   closeProject(event: Event): void {
-    let projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
-
-    if (projectFullScreenElement) {
-      projectFullScreenElement.classList.add('animated-slide-out-screen-down');
+    if (this.projectFullScreenElement) {
+      this.projectFullScreenElement.classList.add('animated-slide-out-screen-down');
       setTimeout(() => {
-        projectFullScreenElement.classList.remove('animated-slide-out-screen-down');
+        this.projectFullScreenElement.classList.remove('animated-slide-out-screen-down');
+        this.doCloseProject.emit(this.index);
         this.isOpen = false;
-      }, 1000);
+      }, 200);
     }
 
     event.stopPropagation();
   }
 
   previousProject(event: Event): void {
-    this.closeProject(event);
+    console.log('this.projectFullScreenElement : ', this.projectFullScreenElement);
 
-    let projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
-
-    console.log('projectFullScreenElement : ', projectFullScreenElement);
-
-    if (projectFullScreenElement) {
-      projectFullScreenElement.classList.add('animated-slide-out-screen-right');
-      this.goToPreviousProject.emit(this.index - 1);
+    if (this.projectFullScreenElement) {
+      this.projectFullScreenElement.classList.add('animated-slide-out-screen-left');
+      this.goToPreviousProject.emit(this.index);
       setTimeout(() => {
-        projectFullScreenElement.classList.remove('animated-slide-out-screen-right');
+        this.projectFullScreenElement.classList.remove('animated-slide-out-screen-left');
         this.isOpen = false;
-        console.log('projectFullScreenElement : ', projectFullScreenElement);
-      }, 1000);
+      }, 200);
     }
   }
 
   nextProject(event: Event): void {
-    this.closeProject(event);
-
-    let projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
-
-    console.log('projectFullScreenElement : ', projectFullScreenElement);
-
-    if (projectFullScreenElement) {
-      projectFullScreenElement.classList.add('animated-slide-out-screen-left');
-      this.goToPreviousProject.emit(this.index + 1);
+    console.log('this.projectFullScreenElement : ', this.projectFullScreenElement);
+    if (this.projectFullScreenElement) {
+      this.projectFullScreenElement.classList.add('animated-slide-out-screen-right');
+      this.goToPreviousProject.emit(this.index);
       setTimeout(() => {
-        projectFullScreenElement.classList.remove('animated-slide-out-screen-left');
+        this.projectFullScreenElement.classList.remove('animated-slide-out-screen-right');
         this.isOpen = false;
-        console.log('projectFullScreenElement : ', projectFullScreenElement);
-      }, 1000);
+      }, 200);
     }
   }
 

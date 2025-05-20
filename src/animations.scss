@@ -178,6 +178,23 @@
 
 //////////////////////////////////////////////////////////////////////////////
 
+@keyframes slideInScreenRight {
+	0% {
+		left: 100vw;
+	}
+
+	100% {
+		left: 0;
+	}
+}
+
+.animated-slide-in-screen-right {
+	animation: slideInScreenRight 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+
 @keyframes slideOutScreenRight {
 	0% {
 		left: 0;
