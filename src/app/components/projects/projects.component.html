@@ -1,7 +1,9 @@
-<h2 class="title"><span class="contrast">_</span>projects</h2>
+<div class="section">
+	<h2 class="title"><span class="contrast">_</span>projects</h2>
 
-<div class="projects">
-	@for (project of projects; track $index) {
-	<app-project [project]="project" />
-	}
+	<div class="projects">
+		@for (project of projects; track $index) {
+		<app-project [project]="project" />
+		}
+	</div>
 </div>

@@ -7,20 +7,16 @@
 
 .description {
 	font-weight: normal;
-	// font-style: italic;
-	// max-width: 50rem;
-
 	background-color: variables.$contrast-color;
 	color: variables.$main-color;
 	padding: 3rem;
 	transform: skew(-3deg, -2deg);
 	margin: auto;
+	margin-top: 10rem;
 	max-width: 90rem;
-
 }
 
 .presentation {
-	margin-bottom: 5rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;

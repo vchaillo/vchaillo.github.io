@@ -21,9 +21,35 @@ header {
 		.left {
 			font-weight: bold;
 
-			a:hover {
-				transform: scale(1.1) rotate(-2deg);
-				color: inherit;
+			.scroll-to-top-link {
+				transform: scale(3.3) translateX(4rem) translateY(2.5rem);
+				transition: all 0.5s ease-in-out;
+				white-space: wrap;
+				margin-right: 0;
+
+				&::before {
+					content: '_';
+					color: transparent;
+					transition: all 0.5s ease-in-out;
+				}
+
+				&:hover {
+					color: inherit;
+				}
+
+				&.shrink {
+					transform: none;
+
+					&::before {
+						content: '_';
+						color: variables.$contrast-color;
+					}
+
+					&:hover {
+						transform: scale(1.1) rotate(-2deg);
+						transition-duration: 0.2s;
+					}
+				}
 			}
 		}
 
@@ -35,7 +61,6 @@ header {
 			&:hover {
 				transform: scale(1.5) rotate(5deg);
 				color: variables.$contrast-color;
-				transition: all 0.2s ease-in-out;
 			}
 		}
 	}
