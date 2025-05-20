@@ -1,5 +1,5 @@
-@use 'animations';
 @use 'variables' as variables;
+@use 'animations';
 
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
 
@@ -16,6 +16,10 @@ body {
 a {
 	text-decoration: none;
 	color: inherit;
+}
+
+p {
+	font-size: 1.1rem;
 }
 
 .container {
@@ -49,20 +53,6 @@ a {
 	// 	padding: 0.5rem;
 	// 	background-color: #f1ddc4;
 	// }
-}
-
-@keyframes blinkPrompt {
-	0% {
-		background-color: variables.$contrast-color;
-	}
-
-	50% {
-		background-color: variables.$contrast-color;
-	}
-
-	51% {
-		background-color: transparent;
-	}
 }
 
 .contrast {

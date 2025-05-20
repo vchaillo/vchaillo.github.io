@@ -4,21 +4,50 @@
 
 	.experience {
 		border-left: 3px solid variables.$main-color;
-		padding: 1rem 2rem;
+		padding: 1rem 0;
+		padding-left: 2rem;
+		margin-right: 1rem;
 		position: relative;
 		top: 0;
 		left: 0;
 
-		p:before {
-			content: '';
-			display: inline-block;
-			position: absolute;
-			left: -11px;
-			width: 20px;
-			height: 20px;
-			background-color: variables.$contrast-color;
-			border-radius: 50%;
-			margin-right: 2.45rem;
+		ul {
+			list-style: none;
+			padding-left: 0.5rem;
+
+			li {
+				font-size: 1.1rem;
+
+				&:before {
+					content: '- ';
+					color: variables.$contrast-color;
+				}
+			}
+
+		}
+
+		p {
+			margin: 0;
+		}
+
+		h2 {
+			margin: 0;
+
+			&:before {
+				content: '';
+				display: inline-block;
+				position: absolute;
+				left: -11px;
+				vertical-align: text-bottom;
+				// bottom: 50%;
+				top: 1.25rem;
+				width: 20px;
+				height: 20px;
+				transform: skew(-3deg, -2deg);
+				background-color: variables.$contrast-color;
+				// border-radius: 50%;
+				// margin-right: 2.45rem;
+			}
 		}
 	}
 }

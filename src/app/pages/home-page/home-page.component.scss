@@ -14,11 +14,14 @@
 	color: variables.$main-color;
 	padding: 3rem;
 	transform: skew(-3deg, -2deg);
+	margin: auto;
+	max-width: 90rem;
+
 }
 
 .presentation {
 	margin-bottom: 5rem;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: space-around;
 }

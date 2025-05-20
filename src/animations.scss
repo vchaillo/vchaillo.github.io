@@ -1,3 +1,5 @@
+@use 'variables' as variables;
+
 @keyframes slideFadeInLeft {
 	from {
 		opacity: 0;
@@ -78,4 +80,22 @@
 
 .animated-slide-in-left {
 	animation: slideInLeft 1s ease-out forwards;
+}
+
+@keyframes blinkPrompt {
+	0% {
+		background-color: variables.$contrast-color;
+	}
+
+	50% {
+		background-color: variables.$contrast-color;
+	}
+
+	51% {
+		background-color: transparent;
+	}
+}
+
+.animated-blink-prompt {
+	animation: blinkPrompt 1s ease-out forwards;
 }
