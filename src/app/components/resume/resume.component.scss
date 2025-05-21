@@ -3,6 +3,8 @@
 .open-button {
 	cursor: pointer;
 	display: inline-block;
+	transform: skew(-3deg, -2deg);
+	font-size: 1.4rem;
 
 	&:hover {
 		transform: scale(1.5) rotate(5deg);

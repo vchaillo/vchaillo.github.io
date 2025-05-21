@@ -47,6 +47,7 @@ header {
 
 				@media (max-width: variables.$mobile-breakpoint) {
 					transform: none;
+					transform: scale(1.2) translateX(1.8rem) translateY(1rem);
 					// transform: skew(-3deg, -2deg);
 
 					&::before {

@@ -2,13 +2,20 @@
 
 footer {
 	padding: 1.5rem;
+	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
+	// max-width: 20rem;
 
-	.right,
-	.left {
+	.links {
 		text-align: center;
+		margin: 0 4rem;
+		transform: skew(-3deg, -2deg);
+	}
+
+	.label {
+		transform: skew(0deg, 0deg);
 	}
 
 	h3 {
