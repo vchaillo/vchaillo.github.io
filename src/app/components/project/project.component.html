@@ -15,11 +15,14 @@
 </div>
 
 @if (isOpen) {
-<div class="project-fullscreen">
-	<a (click)="nextProject($event)">
+@if (entrance !== 'down') {
+<div class="fullscreen-overlay"></div>
+}
+<div class="project-fullscreen" class="animated-slide-in-screen-{{ entrance}}">
+	<a (click)="closeProject($event)">
 		<img class="icon icon-close" src="/vchaillo/icons/close.svg" alt="Close project">
 	</a>
-	<a (click)="nextProject($event)">
+	<a (click)="previousProject($event)">
 		<img class="icon icon-left" src="/vchaillo/icons/left.svg" alt="Previous project">
 	</a>
 	<a (click)="nextProject($event)">

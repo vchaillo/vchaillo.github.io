@@ -35,6 +35,18 @@ p {
 	}
 }
 
+.hide-on-mobile {
+	@media (max-width: $mobile-breakpoint) {
+		display: none;
+	}
+}
+
+.show-on-mobile {
+	@media (min-width: $mobile-breakpoint) {
+		display: none;
+	}
+}
+
 .code {
 	font-family: 'Consolas', Courier, monospace;
 	background-color: $dark-color;

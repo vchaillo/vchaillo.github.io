@@ -3,6 +3,7 @@
 
 	<div class="projects">
 		@for (project of projects; track $index) {
+
 		<app-project [project]="project" [index]="$index" (goToPreviousProject)="previousProject($index)"
 			(goToNextProject)="nextProject($index)" (doCloseProject)="closeProject()" (click)="setCurrentIndex($index)"
 			[entrance]='entrance' [isOpen]="$index === currentIndex" />

@@ -10,10 +10,6 @@ import { ProjectComponent } from '../project/project.component';
   styleUrl: './projects.component.scss'
 })
 export class ProjectsComponent {
-
-  // fullScreenProject: Project | null = null;
-  currentIndex: number | null = null;
-
   projects: Project[] = [
     {
       name: 'Les Fleuristes',
@@ -66,16 +62,21 @@ export class ProjectsComponent {
   ]
 
   entrance: 'down' | 'left' | 'right' = 'down';
+  currentIndex: number | null = null;
 
   setCurrentIndex(index: number) {
     this.currentIndex = index;
-    document.body.style.overflow = 'hidden';
+    setTimeout(() => {
+      document.body.style.overflow = 'hidden';
+    }, 200);
   }
 
   closeProject() {
     this.entrance = 'down';
     this.currentIndex = null;
-    document.body.style.overflow = 'auto';
+    setTimeout(() => {
+      document.body.style.overflow = 'auto';
+    }, 200);
   }
 
   previousProject(index: number) {
@@ -85,9 +86,7 @@ export class ProjectsComponent {
       this.currentIndex = this.projects.length - 1;
     }
 
-    console.log('this.currentIndex : ', this.currentIndex);
-
-    this.entrance = 'left';
+    this.entrance = 'right';
   }
 
   nextProject(index: number) {
@@ -97,9 +96,7 @@ export class ProjectsComponent {
       this.currentIndex = 0;
     }
 
-    console.log('this.currentIndex : ', this.currentIndex);
-
-    this.entrance = 'right';
+    this.entrance = 'left';
   }
 
 }

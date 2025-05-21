@@ -30,6 +30,7 @@ header {
 				white-space: wrap;
 				margin-right: 0;
 				font-size: 1.5rem;
+				cursor: default;
 				// transform: skew(-3deg, -2deg);
 
 				// position: relative;
@@ -38,7 +39,7 @@ header {
 				&::before {
 					content: '_';
 					color: transparent;
-					transition: all 0.5s ease-in-out;
+					transition: all 0.4s ease-in-out;
 				}
 
 				&:hover {
@@ -54,14 +55,10 @@ header {
 						content: '_';
 						color: $contrast-color;
 					}
-
-					&:hover {
-						transform: scale(1.1) rotate(-2deg);
-						transition-duration: 0.2s;
-					}
 				}
 
 				&.shrink {
+					cursor: pointer;
 					transform: none;
 					// transform: skew(-3deg, -2deg);
 
@@ -71,8 +68,9 @@ header {
 					}
 
 					&:hover {
-						transform: scale(1.1) rotate(-2deg);
 						transition-duration: 0.2s;
+						transform: scale(1.1) rotate(-2deg);
+						transform: skew(-3deg, -2deg) scale(1.1);
 					}
 				}
 			}

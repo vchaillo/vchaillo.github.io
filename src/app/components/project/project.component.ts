@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Project } from '../../models/project';
 import { ProjectStackComponent } from '../project-stack/project-stack.component';
 
@@ -9,7 +9,7 @@ import { ProjectStackComponent } from '../project-stack/project-stack.component'
   templateUrl: './project.component.html',
   styleUrl: './project.component.scss'
 })
-export class ProjectComponent {
+export class ProjectComponent implements OnInit {
   @Input() project!: Project;
   @Input() index!: number;
   @Input() isOpen!: boolean;
@@ -24,40 +24,43 @@ export class ProjectComponent {
   ngOnInit() {
     document.addEventListener('keydown', this.handleKeydown);
     this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
+
   }
 
   openProject(): void {
     this.isOpen = true;
 
-    // setTimeout(() => {
-    //   this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
+    // Set a timeout to ensure the element is available in the DOM
+    setTimeout(() => {
+      this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
 
-    //   if (this.projectFullScreenElement) {
+      if (this.projectFullScreenElement) {
 
-    //     let className = 'animated-slide-in-screen-down';
+        let className = 'animated-slide-in-screen-down';
 
-    //     switch (this.entrance) {
-    //       case 'left':
-    //         className = 'animated-slide-in-screen-left';
-    //         break;
-    //       case 'right':
-    //         className = 'animated-slide-in-screen-right';
-    //         break;
-    //       case 'down':
-    //         className = 'animated-slide-in-screen-down';
-    //         break;
-    //     }
+        switch (this.entrance) {
+          case 'left':
+            className = 'animated-slide-in-screen-left';
+            break;
+          case 'right':
+            className = 'animated-slide-in-screen-right';
+            break;
+          case 'down':
+            className = 'animated-slide-in-screen-down';
+            break;
+        }
 
-    //     this.projectFullScreenElement.classList.add(className);
-    //     setTimeout(() => {
-    //       this.projectFullScreenElement.classList.remove(className);
-    //     }, 200);
-    //   }
-    // }, 20);
+        this.projectFullScreenElement.classList.add(className);
+        setTimeout(() => {
+          this.projectFullScreenElement.classList.remove(className);
+        }, 200);
+      }
+    }, 20);
   }
 
   closeProject(event: Event): void {
     this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
+    this.entrance = 'down';
 
     if (this.projectFullScreenElement) {
       this.projectFullScreenElement.classList.add('animated-slide-out-screen-down');
@@ -72,26 +75,29 @@ export class ProjectComponent {
   }
 
   previousProject(event: Event): void {
-    console.log('this.projectFullScreenElement : ', this.projectFullScreenElement);
+    this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
+    this.entrance = 'right';
 
     if (this.projectFullScreenElement) {
       this.projectFullScreenElement.classList.add('animated-slide-out-screen-left');
-      this.goToPreviousProject.emit(this.index);
       setTimeout(() => {
         this.projectFullScreenElement.classList.remove('animated-slide-out-screen-left');
         this.isOpen = false;
+        this.goToPreviousProject.emit(this.index);
       }, 200);
     }
   }
 
   nextProject(event: Event): void {
-    console.log('this.projectFullScreenElement : ', this.projectFullScreenElement);
+    this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
+    this.entrance = 'left';
+
     if (this.projectFullScreenElement) {
       this.projectFullScreenElement.classList.add('animated-slide-out-screen-right');
-      this.goToPreviousProject.emit(this.index);
       setTimeout(() => {
         this.projectFullScreenElement.classList.remove('animated-slide-out-screen-right');
         this.isOpen = false;
+        this.goToNextProject.emit(this.index);
       }, 200);
     }
   }

@@ -40,8 +40,18 @@
 
 /////////////////////////////////////////////////////////////////////////////////
 
+.fullscreen-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	min-height: 100vh;
+	z-index: 424242;
+	background-color: rgba($color: $dark-color, $alpha: 0.3);
+	backdrop-filter: blur(10px);
+}
+
 .project-fullscreen {
-	overflow: auto;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -50,10 +60,9 @@
 	z-index: 424242;
 	background-color: $main-color;
 	color: $dark-color;
-	animation-duration: 0.3s;
+	animation-duration: 0.2s;
 	display: flex;
 	justify-content: center;
-	// animation: slideInScreenDown 0.2s ease-out forwards;
 
 	.container {
 		display: flex;
