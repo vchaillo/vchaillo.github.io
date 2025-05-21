@@ -1,14 +1,16 @@
-<div class="project" (click)="openProject()">
+<div class="animated-slide-fade-in-up" [style.animation-delay]="index * 0.2 + 's'">
+	<div class="project" (click)="openProject()">
 
-	<div class="project-image">
-		<img src="{{ project.image }}" alt="" />
-	</div>
-	<div class="project-body">
-		<h3 class="project-name">{{ project.name }}</h3>
-		<p class="project-date">{{ project.date }}</p>
-		@if (project.url) {
-		<!-- <small class="card-url">{{ project.url }}</small> -->
-		}
+		<div class="project-image">
+			<img src="{{ project.image }}" alt="" />
+		</div>
+		<div class="project-body">
+			<h3 class="project-name">{{ project.name }}</h3>
+			<p class="project-date">{{ project.date }}</p>
+			@if (project.url) {
+			<!-- <small class="card-url">{{ project.url }}</small> -->
+			}
+		</div>
 	</div>
 </div>
 

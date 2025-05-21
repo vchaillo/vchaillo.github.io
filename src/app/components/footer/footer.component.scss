@@ -32,6 +32,10 @@ footer {
 		&:hover {
 			transform: rotate(5deg) scale(1.3);
 			color: $contrast-color;
+
+			&:last-child {
+				transform: scale(1.3);
+			}
 		}
 	}
 }

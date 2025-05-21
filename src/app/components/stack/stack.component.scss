@@ -4,5 +4,9 @@
 	.tools {
 		display: flex;
 		flex-wrap: wrap;
+
+		.label {
+			animation-duration: 0.1s;
+		}
 	}
 }

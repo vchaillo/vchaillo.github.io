@@ -57,17 +57,17 @@
 
 @keyframes slideFadeInUp {
 	from {
-		// opacity: 0;
+		opacity: 0;
 		transform: translateY(50px);
 	}
 
 	to {
-		// opacity: 1;
+		opacity: 1;
 		transform: translateX(0);
 	}
 }
 
 .animated-slide-fade-in-up {
 	animation: slideFadeInUp 0.5s ease-out forwards;
-	// opacity: 0;
+	opacity: 0;
 }

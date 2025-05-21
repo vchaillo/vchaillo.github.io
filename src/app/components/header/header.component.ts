@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, OnDestroy } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { ResumeComponent } from '../resume/resume.component';
 
@@ -12,9 +12,7 @@ import { ResumeComponent } from '../resume/resume.component';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
-  @ViewChild('mainTitle') mainTitle!: ElementRef;
-  @ViewChild('headerTitle') headerTitle!: ElementRef;
+export class HeaderComponent implements AfterViewInit, OnDestroy {
 
   ngAfterViewInit() {
     window.addEventListener('scroll', this.handleScroll);
