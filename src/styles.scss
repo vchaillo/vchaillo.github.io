@@ -51,6 +51,10 @@ p {
 
 .section {
 	margin-bottom: 5rem;
+
+	@media (max-width: variables.$mobile-breakpoint) {
+		margin-bottom: 3rem;
+	}
 }
 
 .title {

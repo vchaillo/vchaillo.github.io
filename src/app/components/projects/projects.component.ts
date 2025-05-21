@@ -69,11 +69,13 @@ export class ProjectsComponent {
 
   setCurrentIndex(index: number) {
     this.currentIndex = index;
+    document.body.style.overflow = 'hidden';
   }
 
   closeProject() {
     this.entrance = 'down';
     this.currentIndex = null;
+    document.body.style.overflow = 'auto';
   }
 
   previousProject(index: number) {

@@ -14,12 +14,14 @@ export class ResumeComponent implements OnInit {
     document.addEventListener('keydown', this.handleKeydown);
   }
 
-  toggleResume() {
-    this.resumeIsOpen = !this.resumeIsOpen;
+  openResume() {
+    this.resumeIsOpen = true;
+    document.body.style.overflow = 'hidden';
   }
 
   closeResume() {
     this.resumeIsOpen = false;
+    document.body.style.overflow = 'auto';
   }
 
   handleKeydown = (event: KeyboardEvent) => {
