@@ -1,4 +1,4 @@
-@use '../../../variables' as variables;
+@import '../../../variables';
 
 .projects {
 	display: grid;
@@ -6,17 +6,17 @@
 	gap: 1rem;
 	grid-template-columns: repeat(6, 1fr);
 
-	@media (max-width: variables.$fullhd-breakpoint) {
+	@media (max-width: $fullhd-breakpoint) {
 		grid-template-columns: repeat(3, 1fr);
 		margin: auto;
 	}
 
-	@media (max-width: variables.$tablet-breakpoint) {
+	@media (max-width: $tablet-breakpoint) {
 		grid-template-columns: repeat(2, 1fr);
 		margin: auto;
 	}
 
-	@media (max-width: variables.$mobile-breakpoint) {
+	@media (max-width: $mobile-breakpoint) {
 		grid-template-columns: 1fr;
 	}
 }

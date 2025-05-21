@@ -1,8 +1,8 @@
-@use '../../../variables' as variables;
+@import '../../../variables';
 
 .stack {
 
-	@media (max-width: variables.$mobile-breakpoint) {
+	@media (max-width: $mobile-breakpoint) {
 		margin-bottom: 1rem;
 	}
 

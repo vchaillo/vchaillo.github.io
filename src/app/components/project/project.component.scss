@@ -1,10 +1,10 @@
-@use '../../../variables' as variables;
+@import '../../../variables';
 
 .project {
-	border: 7px solid variables.$contrast-color;
+	border: 7px solid $contrast-color;
 	width: 16rem;
 	margin: auto;
-	color: variables.$main-color;
+	color: $main-color;
 	// color: black;
 	transition: transform 0.3s ease;
 	cursor: pointer;
@@ -48,8 +48,8 @@
 	width: 100vw;
 	min-height: 100vh;
 	z-index: 424242;
-	background-color: variables.$main-color;
-	color: variables.$dark-color;
+	background-color: $main-color;
+	color: $dark-color;
 	animation-duration: 0.3s;
 	display: flex;
 	justify-content: center;
@@ -62,17 +62,17 @@
 		align-items: center;
 		flex-wrap: wrap-reverse;
 
-		@media (max-width: variables.$mobile-breakpoint) {
+		@media (max-width: $mobile-breakpoint) {
 			padding: 1rem 0;
 		}
 	}
 
 	.project-fullscreen-image {
-		border: 7px solid variables.$dark-color;
+		border: 7px solid $dark-color;
 		transform: skew(3deg, 2deg);
 		margin: 0 1rem;
 
-		@media (max-width: variables.$mobile-breakpoint) {
+		@media (max-width: $mobile-breakpoint) {
 			transform: skew(3deg, 2deg) scale(0.8);
 		}
 
@@ -87,14 +87,14 @@
 		max-width: 30rem;
 		padding: 1rem;
 
-		@media (max-width: variables.$mobile-breakpoint) {
+		@media (max-width: $mobile-breakpoint) {
 			padding: 0rem 1rem;
 		}
 
 		.project-fullscreen-name {
 			font-size: 3rem;
 
-			@media (max-width: variables.$mobile-breakpoint) {
+			@media (max-width: $mobile-breakpoint) {
 				font-size: 2rem;
 				margin-top: 0;
 			}
@@ -103,19 +103,19 @@
 		.project-fullscreen-description {
 			font-size: 1.2rem;
 
-			@media (max-width: variables.$mobile-breakpoint) {
+			@media (max-width: $mobile-breakpoint) {
 				font-size: 1rem;
 			}
 		}
 
 		.project-fullscreen-date {
 			transform: skew(-3deg, -2deg);
-			background-color: variables.$dark-color;
-			color: variables.$main-color;
+			background-color: $dark-color;
+			color: $main-color;
 			width: fit-content;
 			padding: 10px;
 
-			@media (max-width: variables.$mobile-breakpoint) {
+			@media (max-width: $mobile-breakpoint) {
 				position: absolute;
 				top: 0;
 				left: 1rem;
@@ -159,14 +159,18 @@
 	.icon-left {
 		top: 50%;
 		left: 1rem;
+		width: 32px;
+		height: 32px;
 	}
 
 	.icon-right {
 		top: 50%;
 		right: 1rem;
+		width: 32px;
+		height: 32px;
 	}
 
-	@media (max-width: variables.$mobile-breakpoint) {
+	@media (max-width: $mobile-breakpoint) {
 
 		.icon-left,
 		.icon-right {

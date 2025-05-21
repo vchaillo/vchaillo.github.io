@@ -1,0 +1,73 @@
+@keyframes slideFadeInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.animated-slide-fade-in-left {
+	animation: slideFadeInLeft 1s ease-out forwards;
+	opacity: 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideFadeInRight {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.animated-slide-fade-in-right {
+	animation: slideFadeInRight 1s ease-out forwards;
+	opacity: 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideFadeInDown {
+	from {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.animated-slide-fade-in-down {
+	animation: slideFadeInDown 0.5s ease-out forwards;
+	opacity: 0;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideFadeInUp {
+	from {
+		// opacity: 0;
+		transform: translateY(50px);
+	}
+
+	to {
+		// opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+.animated-slide-fade-in-up {
+	animation: slideFadeInUp 0.5s ease-out forwards;
+	// opacity: 0;
+}

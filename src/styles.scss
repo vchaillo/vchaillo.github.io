@@ -1,6 +1,6 @@
-@use 'variables' as variables;
-@use 'animations';
+@use 'app/animations/animations';
 
+@import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
 
 body {
@@ -10,7 +10,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'Urbanist', sans-serif;
-	color: variables.$main-color;
+	color: $main-color;
 }
 
 a {
@@ -23,22 +23,22 @@ p {
 }
 
 .label {
-	background-color: variables.$contrast-color;
-	color: variables.$main-color;
+	background-color: $contrast-color;
+	color: $main-color;
 	padding: 0.4rem 0.4rem;
 	margin: 0.25rem;
 	font-weight: bold;
 	transform: skew(-3deg, -2deg);
 
-	@media (max-width: variables.$mobile-breakpoint) {
+	@media (max-width: $mobile-breakpoint) {
 		margin: 0.15rem;
 	}
 }
 
 .code {
 	font-family: 'Consolas', Courier, monospace;
-	background-color: variables.$dark-color;
-	color: variables.$main-color;
+	background-color: $dark-color;
+	color: $main-color;
 	padding: 0 0.2rem;
 }
 
@@ -62,7 +62,7 @@ p {
 .section {
 	margin-bottom: 5rem;
 
-	@media (max-width: variables.$mobile-breakpoint) {
+	@media (max-width: $mobile-breakpoint) {
 		margin-bottom: 3rem;
 	}
 }
@@ -80,8 +80,8 @@ p {
 	font-family: inherit;
 	font-size: inherit;
 	cursor: pointer;
-	background-color: variables.$contrast-color;
-	color: variables.$main-color;
+	background-color: $contrast-color;
+	color: $main-color;
 
 	// &:hover {
 	// 	padding: 0.5rem;
@@ -91,5 +91,5 @@ p {
 
 .contrast {
 	// animation: blinkPrompt 2s infinite
-	color: variables.$contrast-color;
+	color: $contrast-color;
 }

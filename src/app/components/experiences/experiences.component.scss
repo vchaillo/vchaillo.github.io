@@ -1,9 +1,9 @@
-@use '../../../variables' as variables;
+@import '../../../variables';
 
 .experiences {
 
 	.experience {
-		border-left: 3px solid variables.$main-color;
+		border-left: 3px solid $main-color;
 		padding: 1rem 0;
 		padding-left: 2rem;
 		margin-right: 3rem;
@@ -21,7 +21,7 @@
 
 				&:before {
 					content: '- ';
-					color: variables.$contrast-color;
+					color: $contrast-color;
 				}
 			}
 
@@ -35,6 +35,7 @@
 			margin: 0;
 
 			&:before {
+				margin-left: -2rem;
 				content: '';
 				display: inline-block;
 				position: absolute;
@@ -45,7 +46,7 @@
 				width: 20px;
 				height: 20px;
 				transform: skew(-3deg, -2deg);
-				background-color: variables.$contrast-color;
+				background-color: $contrast-color;
 				// border-radius: 50%;
 				// margin-right: 2.45rem;
 			}

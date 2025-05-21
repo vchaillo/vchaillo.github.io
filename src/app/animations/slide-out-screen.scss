@@ -1,0 +1,61 @@
+@keyframes slideOutScreenLeft {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: -100vw;
+	}
+}
+
+.animated-slide-out-screen-left {
+	animation: slideOutScreenLeft 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideOutScreenRight {
+	0% {
+		left: 0;
+	}
+
+	100% {
+		left: 100vw;
+	}
+}
+
+.animated-slide-out-screen-right {
+	animation: slideOutScreenRight 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideOutScreenDown {
+	0% {
+		top: 0;
+	}
+
+	100% {
+		top: 100vh;
+	}
+}
+
+.animated-slide-out-screen-down {
+	animation: slideOutScreenDown 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideOutScreenUp {
+	0% {
+		top: 0;
+	}
+
+	100% {
+		top: -100vh;
+	}
+}
+
+.animated-slide-out-screen-up {
+	animation: slideOutScreenUp 1s ease-out forwards;
+}

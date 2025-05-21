@@ -1,4 +1,4 @@
-@use '../../../variables' as variables;
+@import '../../../variables';
 
 // .name {
 // 	font-size: 4rem;
@@ -7,8 +7,8 @@
 
 .description {
 	font-weight: normal;
-	background-color: variables.$contrast-color;
-	color: variables.$main-color;
+	background-color: $contrast-color;
+	color: $main-color;
 	padding: 3rem;
 	transform: skew(-3deg, -2deg);
 	margin: auto;
@@ -17,7 +17,7 @@
 	transition: all 0.2s ease-in-out;
 	line-height: 2rem;
 
-	@media (max-width: variables.$mobile-breakpoint) {
+	@media (max-width: $mobile-breakpoint) {
 		margin-top: 0rem;
 		padding: 2rem;
 		font-size: 1.2rem;

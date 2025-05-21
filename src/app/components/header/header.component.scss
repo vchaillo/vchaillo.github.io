@@ -1,4 +1,4 @@
-@use '../../../variables' as variables;
+@import '../../../variables';
 
 header {
 	padding: 1.5rem;
@@ -45,14 +45,14 @@ header {
 					color: inherit;
 				}
 
-				@media (max-width: variables.$mobile-breakpoint) {
+				@media (max-width: $mobile-breakpoint) {
 					transform: none;
 					transform: scale(1.2) translateX(1.8rem) translateY(1rem);
 					// transform: skew(-3deg, -2deg);
 
 					&::before {
 						content: '_';
-						color: variables.$contrast-color;
+						color: $contrast-color;
 					}
 
 					&:hover {
@@ -67,7 +67,7 @@ header {
 
 					&::before {
 						content: '_';
-						color: variables.$contrast-color;
+						color: $contrast-color;
 					}
 
 					&:hover {
@@ -86,7 +86,7 @@ header {
 
 			&:hover {
 				transform: scale(1.5) rotate(5deg);
-				color: variables.$contrast-color;
+				color: $contrast-color;
 			}
 		}
 	}

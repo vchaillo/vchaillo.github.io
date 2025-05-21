@@ -1,0 +1,19 @@
+@import '../../variables';
+
+@keyframes blinkPrompt {
+	0% {
+		background-color: $contrast-color;
+	}
+
+	50% {
+		background-color: $contrast-color;
+	}
+
+	51% {
+		background-color: transparent;
+	}
+}
+
+.animated-blink-prompt {
+	animation: blinkPrompt 1s ease-out forwards;
+}

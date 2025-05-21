@@ -1,0 +1,64 @@
+@keyframes slideInScreenLeft {
+	0% {
+		left: -100vw;
+	}
+
+	100% {
+		left: 0;
+	}
+
+
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+.animated-slide-in-screen-left {
+	animation: slideInScreenLeft 1s ease-out forwards;
+}
+
+
+@keyframes slideInScreenRight {
+	0% {
+		left: 100vw;
+	}
+
+	100% {
+		left: 0;
+	}
+}
+
+.animated-slide-in-screen-right {
+	animation: slideInScreenRight 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideInScreenDown {
+	0% {
+		top: -100vh;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+.animated-slide-in-screen-down {
+	animation: slideInScreenDown 1s ease-out forwards;
+}
+
+//////////////////////////////////////////////////////////////////////////////
+
+@keyframes slideInScreenUp {
+	0% {
+		bottom: -100vh;
+	}
+
+	100% {
+		top: 0;
+	}
+}
+
+.animated-slide-in-screen-up {
+	animation: slideInScreenUp 1s ease-out forwards;
+}
