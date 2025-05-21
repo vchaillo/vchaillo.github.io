@@ -39,6 +39,7 @@
 }
 
 .project-fullscreen {
+	overflow: scroll;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -67,6 +68,10 @@
 		transform: skew(3deg, 2deg);
 		margin: 0 2rem;
 
+		@media (max-width: variables.$mobile-breakpoint) {
+			transform: skew(3deg, 2deg) scale(0.8);
+		}
+
 		img {
 			width: 100%;
 			max-width: 30rem;
@@ -85,13 +90,24 @@
 		max-width: 30rem;
 		padding: 2rem;
 
+		@media (max-width: variables.$mobile-breakpoint) {
+			padding: 1rem 2rem;
+		}
+
 		.project-fullscreen-name {
 			font-size: 3rem;
+
+			@media (max-width: variables.$mobile-breakpoint) {
+				font-size: 2rem;
+			}
 		}
 
 		.project-fullscreen-description {
 			font-size: 1.2rem;
-			// margin: 2rem 0;
+
+			@media (max-width: variables.$mobile-breakpoint) {
+				font-size: 1rem;
+			}
 		}
 
 		.project-fullscreen-date {
@@ -135,7 +151,7 @@
 
 	.fa-xmark {
 		// top: 0.5rem;
-		right: 2rem;
+		right: 1rem;
 	}
 
 	.fa-chevron-left {
