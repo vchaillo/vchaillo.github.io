@@ -1,22 +1,23 @@
 <div class="animated-slide-fade-in-down">
-	<a class="open-button" (click)="openResume()">
-		<img class="icon" src="/vchaillo/icons/envelope.svg" alt="Open resume">
+	<a class="open-button" (click)="openResume()" title="Contact me">
+		<img class="icon" src="/vchaillo/icons/envelope.svg" alt="Contact me">
 	</a>
 </div>
 
 @if (resumeIsOpen) {
 <div class="resume">
 	<i (click)="closeResume()" class=" close-mark fa-solid fa-check"></i>
+	<!-- <img class="icon close-button" src="/vchaillo/icons/close.svg" alt="Close" (click)="closeResume()"> -->
 
-	<div class="animated-slide-fade-in-down">
+	<div class=" animated-slide-fade-in-down">
 		<h3 class="label">_socials</h3>
-		<a href="mailto:valentinchaillou89@gmail.com">
+		<a href="mailto:valentinchaillou89@gmail.com" title="Send email">
 			<i class="fa-solid fa-at"></i>
 		</a>
-		<a href="https://github.com/vchaillo" target="_blank">
+		<a href="https://github.com/vchaillo" target="_blank" title="GitHub">
 			<i class="fa-brands fa-github"></i>
 		</a>
-		<a href="https://www.linkedin.com/in/vchaillo" target="_blank">
+		<a href="https://www.linkedin.com/in/vchaillo" target="_blank" title="LinkedIn">
 			<i class="fa-brands fa-linkedin"></i>
 		</a>
 	</div>
@@ -29,10 +30,10 @@
 
 	<div class="animated-slide-fade-in-up">
 		<h3 class="label">_save as</h3>
-		<a href="/vchaillo/valentin_chaillou.pdf" download="vchaillo/valentin_chaillou.pdf">
+		<a href="/vchaillo/valentin_chaillou.pdf" download="vchaillo/valentin_chaillou.pdf" title="Download PDF">
 			<i class="fa-solid fa-file-pdf"></i>
 		</a>
-		<a href="/vchaillo/valentin_chaillou.png" download="vchaillo/valentin_chaillou.png">
+		<a href="/vchaillo/valentin_chaillou.png" download="vchaillo/valentin_chaillou.png" title="Download PNG">
 			<i class="fa-solid fa-image"></i>
 		</a>
 	</div>

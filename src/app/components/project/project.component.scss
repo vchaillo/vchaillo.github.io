@@ -6,7 +6,7 @@
 	margin: auto;
 	color: $main-color;
 	// color: black;
-	transition: transform 0.3s ease;
+	transition: all 0.1s ease-out;
 	cursor: pointer;
 	transform: skew(-3deg, -2deg);
 

@@ -11,6 +11,7 @@
 	max-width: 90rem;
 	transition: all 0.2s ease-in-out;
 	line-height: 2rem;
+	animation-delay: 2s;
 
 	@media (max-width: $mobile-breakpoint) {
 		margin-top: 0rem;
