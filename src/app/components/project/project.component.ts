@@ -28,7 +28,6 @@ export class ProjectComponent {
 
   openProject(): void {
     this.isOpen = true;
-    console.log('open ! index', this.index);
 
     setTimeout(() => {
       this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;

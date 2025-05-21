@@ -1,4 +1,4 @@
-<a (click)="toggleResume()"><i class="fa-solid fa-envelope"></i></a>
+<a class="open-button" (click)="toggleResume()"><i class="fa-solid fa-envelope"></i></a>
 
 @if (resumeIsOpen) {
 <div class="resume">
@@ -17,9 +17,11 @@
 		</a>
 	</div>
 
-	<img class="animated-zoom-fade-in-back" src="valentin_chaillou.png" alt="resume">
+	<div class="resume-image">
+		<img class="animated-zoom-fade-in-bac" src="valentin_chaillou.png" alt="resume">
+	</div>
 
-	<div class="resume-toolbar animated-slide-fade-in-down">
+	<div class="animated-slide-fade-in-down">
 		<h3 class="label">_save as</h3>
 		<a href="/vchaillo/valentin_chaillou.pdf" download="vchaillo/valentin_chaillou.pdf">
 			<i class="fa-solid fa-file-pdf"></i>

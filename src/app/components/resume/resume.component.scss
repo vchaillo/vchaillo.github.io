@@ -1,6 +1,6 @@
 @use '../../../variables' as variables;
 
-a {
+.open-button {
 	cursor: pointer;
 	display: inline-block;
 
@@ -21,15 +21,21 @@ a {
 	backdrop-filter: blur(10px);
 	padding: 5rem 0;
 	text-align: center;
-	// display: flex;
-	// flex-direction: column;
-	// align-items: center;
-	// justify-content: space-between;
 
-	img {
-		max-height: 60vh;
-		max-width: max-content;
-		width: 90vw;
+	.resume-image {
+		width: fit-content;
+		margin: auto;
+		transform: skew(-3deg, -2deg);
+		border: 7px solid variables.$contrast-color;
+
+
+		img {
+			max-height: 60vh;
+			max-width: max-content;
+			width: 90vw;
+			width: 100%;
+			transform: skew(3deg, 2deg);
+		}
 	}
 
 	.close-mark {
@@ -37,8 +43,6 @@ a {
 		top: 0rem;
 		right: 0rem;
 		z-index: 1000;
-		width: 1rem;
-		height: 1rem;
 		border-radius: 50%;
 		color: variables.$main-color;
 		display: flex;
@@ -51,13 +55,13 @@ a {
 		transition: all 0.1s ease-in-out;
 
 		&:hover {
-			transform: scale(1.3);
+			transform: scale(1.3) skew(-3deg, -2deg);
 			color: variables.$contrast-color;
 		}
 	}
 
 	h3 {
-		width: fit-content;
+		// width: fit-content;
 		// margin: auto;
 		display: inline-block;
 	}
@@ -73,5 +77,4 @@ a {
 			color: variables.$contrast-color;
 		}
 	}
-
 }

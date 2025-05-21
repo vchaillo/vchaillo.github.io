@@ -122,11 +122,11 @@
 		font-size: 2rem;
 		font-weight: bold;
 		width: 2rem;
-		height: 2rem;
+		line-height: 2rem;
 		transition: all 0.2s ease-in-out;
 
 		&:hover {
-			transform: skew(-3deg, -2deg);
+			transform: scale(1.3);
 		}
 
 		&::before {
