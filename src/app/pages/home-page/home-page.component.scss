@@ -1,4 +1,9 @@
+@use '../../animations/animations';
 @import '../../../variables';
+
+.animated-slide-fade-in-up {
+	animation-delay: 0.7s;
+}
 
 .description {
 	font-weight: normal;
@@ -11,7 +16,7 @@
 	max-width: 90rem;
 	transition: all 0.2s ease-in-out;
 	line-height: 2rem;
-	animation-delay: 2s;
+	animation: slideFadeInRight;
 
 	@media (max-width: $mobile-breakpoint) {
 		margin-top: 0rem;

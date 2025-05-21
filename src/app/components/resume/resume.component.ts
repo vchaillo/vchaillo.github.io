@@ -20,8 +20,16 @@ export class ResumeComponent implements OnInit {
   }
 
   closeResume() {
-    this.resumeIsOpen = false;
-    document.body.style.overflow = 'auto';
+    const resumeElement = document.querySelector('.resume-image') as HTMLElement;
+
+    if (resumeElement) {
+      resumeElement.classList.add('animated-zoom-out');
+      setTimeout(() => {
+        resumeElement.classList.remove('animated-zoom-out');
+        this.resumeIsOpen = false;
+        document.body.style.overflow = 'auto';
+      }, 200);
+    }
   }
 
   handleKeydown = (event: KeyboardEvent) => {

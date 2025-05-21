@@ -1,0 +1,17 @@
+@keyframes zoomOut {
+	from {
+		opacity: 1;
+		transform: scale(1);
+		border: none;
+	}
+
+	to {
+		opacity: 0;
+		transform: scale(0.2);
+	}
+}
+
+.animated-zoom-out {
+	animation: zoomOut 0.2s ease-out forwards;
+	opacity: 0;
+}

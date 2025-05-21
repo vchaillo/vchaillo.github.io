@@ -1,4 +1,4 @@
-@keyframes zoomFadeIn {
+@keyframes zoomIn {
 	from {
 		opacity: 0;
 		transform: scale(0.2);
@@ -10,7 +10,7 @@
 	}
 }
 
-.animated-zoom-fade-in {
-	animation: zoomFadeIn 0.3s ease-out forwards;
+.animated-zoom-in {
+	animation: zoomIn 0.3s ease-out forwards;
 	opacity: 0;
 }

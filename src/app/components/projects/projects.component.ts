@@ -74,9 +74,7 @@ export class ProjectsComponent {
   closeProject() {
     this.entrance = 'down';
     this.currentIndex = null;
-    setTimeout(() => {
-      document.body.style.overflow = 'auto';
-    }, 200);
+    document.body.style.overflow = 'auto';
   }
 
   previousProject(index: number) {
