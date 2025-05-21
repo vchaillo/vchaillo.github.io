@@ -29,13 +29,23 @@ p {
 	margin: 0.25rem;
 	font-weight: bold;
 	transform: skew(-3deg, -2deg);
+
+	@media (max-width: variables.$mobile-breakpoint) {
+		margin: 0.15rem;
+	}
 }
 
 .code {
-	font-family: 'Consolas';
-	// background-color: variables.$main-color;
-	color: variables.$dark-color;
+	font-family: 'Consolas', Courier, monospace;
+	background-color: variables.$dark-color;
+	color: variables.$main-color;
 	padding: 0 0.2rem;
+}
+
+.icon {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
 }
 
 .container {

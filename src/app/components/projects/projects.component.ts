@@ -60,7 +60,7 @@ export class ProjectsComponent {
       url: 'https://geekzie.fr',
       date: '2015 - 2018',
       image: 'projects/geekzie.png',
-      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt adipisci quam exercitationem maiores rerum sint facilis eum sapiente ullam! Explicabo, minima? Quia, deserunt officiis. Ducimus et adipisci nisi iste!',
+      description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt adipisci quam exercitationem maiores rerum sint facilis eum sapiente ullam! Explicabo, minima? Quia, deserunt officiis. Ducimus et adipisci nisi iste! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum incidunt adipisci quam exercitationem maiores rerum sint facilis eum sapiente ullam! Explicabo, minima? Quia, deserunt officiis. Ducimus et adipisci nisi iste!',
       stack: ['Ruby', 'Ruby on Rails', 'Redis', 'Bootstrap', 'MySQL', 'Stripe'],
     },
   ]

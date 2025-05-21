@@ -14,9 +14,15 @@
 
 @if (isOpen) {
 <div class="project-fullscreen">
-	<a (click)="closeProject($event)"><i class="fa-solid fa-xmark"></i></a>
-	<a (click)="nextProject($event)"><i class="fa-solid fa-chevron-left"></i></a>
-	<a (click)="nextProject($event)"><i class="fa-solid fa-chevron-right"></i></a>
+	<a (click)="nextProject($event)">
+		<img class="icon icon-close" src="/vchaillo/icons/close.svg" alt="Close project">
+	</a>
+	<a (click)="nextProject($event)">
+		<img class="icon icon-left" src="/vchaillo/icons/left.svg" alt="Previous project">
+	</a>
+	<a (click)="nextProject($event)">
+		<img class="icon icon-right" src="/vchaillo/icons/right.svg" alt="Next project">
+	</a>
 
 	<div class="container">
 		<div class="project-fullscreen-body">

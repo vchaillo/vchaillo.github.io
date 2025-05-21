@@ -9,5 +9,9 @@
 	.tools {
 		display: flex;
 		flex-wrap: wrap;
+
+		.label {
+			font-size: 0.8rem;
+		}
 	}
 }

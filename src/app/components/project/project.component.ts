@@ -29,34 +29,36 @@ export class ProjectComponent {
   openProject(): void {
     this.isOpen = true;
 
-    setTimeout(() => {
-      this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
+    // setTimeout(() => {
+    //   this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
 
-      if (this.projectFullScreenElement) {
+    //   if (this.projectFullScreenElement) {
 
-        let className = 'animated-slide-in-screen-down';
+    //     let className = 'animated-slide-in-screen-down';
 
-        switch (this.entrance) {
-          case 'left':
-            className = 'animated-slide-in-screen-left';
-            break;
-          case 'right':
-            className = 'animated-slide-in-screen-right';
-            break;
-          case 'down':
-            className = 'animated-slide-in-screen-down';
-            break;
-        }
+    //     switch (this.entrance) {
+    //       case 'left':
+    //         className = 'animated-slide-in-screen-left';
+    //         break;
+    //       case 'right':
+    //         className = 'animated-slide-in-screen-right';
+    //         break;
+    //       case 'down':
+    //         className = 'animated-slide-in-screen-down';
+    //         break;
+    //     }
 
-        this.projectFullScreenElement.classList.add(className);
-        setTimeout(() => {
-          this.projectFullScreenElement.classList.remove(className);
-        }, 200);
-      }
-    }, 20);
+    //     this.projectFullScreenElement.classList.add(className);
+    //     setTimeout(() => {
+    //       this.projectFullScreenElement.classList.remove(className);
+    //     }, 200);
+    //   }
+    // }, 20);
   }
 
   closeProject(event: Event): void {
+    this.projectFullScreenElement = document.querySelector('.project-fullscreen') as HTMLElement;
+
     if (this.projectFullScreenElement) {
       this.projectFullScreenElement.classList.add('animated-slide-out-screen-down');
       setTimeout(() => {
