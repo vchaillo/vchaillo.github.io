@@ -1,4 +1,4 @@
-<div class="animated-slide-fade-in-up" [style.animation-delay]="index * 0.2 + 's'">
+<div class="animated-slide-fade-in-up" [style.animation-delay]="index * 0.2 + 1 + 's'">
 	<div class="project" (click)="openProject()">
 
 		<div class="project-image">
@@ -37,7 +37,8 @@
 
 			<app-project-stack [stack]="project.stack" />
 			<a class="project-fullscreen-url" [href]="project.url" target="_blank">
-				_Visit website
+				<i class="fa-solid fa-up-right-from-square"></i>
+				Visit website
 			</a>
 		</div>
 		<div class="project-fullscreen-image">

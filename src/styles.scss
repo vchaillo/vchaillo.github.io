@@ -1,5 +1,4 @@
 @use 'app/animations/animations';
-
 @import 'variables';
 @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&display=swap');
 
@@ -11,6 +10,13 @@ body {
 	margin: 0;
 	font-family: 'Urbanist', sans-serif;
 	color: $main-color;
+}
+
+.no-scroll {
+	overflow: hidden;
+	// padding-right: 15px;
+	border-right: 14px solid #2C2C2C;
+	/* Largeur approximative de la barre de défilement */
 }
 
 a {
@@ -82,7 +88,8 @@ p {
 .title {
 	font-size: 3rem;
 	font-weight: bold;
-	animation: slideFadeInLeft 1s ease-out forwards;
+	opacity: 0;
+	animation: slideFadeInLeft $xlong-animation-duration ease-out forwards;
 }
 
 .button {

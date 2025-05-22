@@ -49,7 +49,7 @@ export class ProjectComponent implements OnInit {
             className = 'animated-slide-in-screen-down';
             break;
         }
-
+        // this.projectFullScreenElement.style.animationDuration = '0.1s';
         this.projectFullScreenElement.classList.add(className);
         setTimeout(() => {
           this.projectFullScreenElement.classList.remove(className);

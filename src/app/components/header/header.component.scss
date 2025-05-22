@@ -26,20 +26,17 @@ header {
 
 			.scroll-to-top-link {
 				transform: scale(3.3) translateX(4rem) translateY(2.5rem);
-				transition: all 0.5s ease-in-out;
+				transition: all $long-animation-duration ease-in-out;
+				display: inline-block;
 				white-space: wrap;
 				margin-right: 0;
 				font-size: 1.5rem;
-				cursor: default;
-				// transform: skew(-3deg, -2deg);
-
-				// position: relative;
-				// z-index: 4243;
+				cursor: text;
 
 				&::before {
 					content: '_';
 					color: transparent;
-					transition: all 0.4s ease-in-out;
+					transition: all $long-animation-duration ease-in-out;
 				}
 
 				&:hover {
@@ -49,7 +46,6 @@ header {
 				@media (max-width: $mobile-breakpoint) {
 					transform: none;
 					transform: scale(1.2) translateX(1.8rem) translateY(1rem);
-					// transform: skew(-3deg, -2deg);
 
 					&::before {
 						content: '_';
@@ -60,7 +56,6 @@ header {
 				&.shrink {
 					cursor: pointer;
 					transform: none;
-					// transform: skew(-3deg, -2deg);
 
 					&::before {
 						content: '_';
@@ -76,16 +71,15 @@ header {
 			}
 		}
 
-		a {
-			display: inline-block;
-			margin-right: 1rem;
-			transition: all 0.2s ease-in-out;
-			animation: slideScreenLeft 0.2s ease-out forwards;
+		// a {
+		// 	display: inline-block;
+		// 	margin-right: 1rem;
+		// 	transition: all 0.2s ease-in-out;
 
-			&:hover {
-				transform: scale(1.5) rotate(5deg);
-				color: $contrast-color;
-			}
-		}
+		// 	&:hover {
+		// 		transform: scale(1.5) rotate(5deg);
+		// 		color: $contrast-color;
+		// 	}
+		// }
 	}
 }

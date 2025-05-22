@@ -17,17 +17,21 @@ export class ResumeComponent implements OnInit {
   openResume() {
     this.resumeIsOpen = true;
     document.body.style.overflow = 'hidden';
+    // document.body.classList.add('no-scroll');
   }
 
   closeResume() {
-    const resumeElement = document.querySelector('.resume-image') as HTMLElement;
+    const resumeImageElement = document.querySelector('.resume-image') as HTMLElement;
 
-    if (resumeElement) {
-      resumeElement.classList.add('animated-zoom-out');
+    if (resumeImageElement) {
+
+      resumeImageElement.classList.add('animated-zoom-out');
       setTimeout(() => {
-        resumeElement.classList.remove('animated-zoom-out');
+        resumeImageElement.classList.remove('animated-zoom-out');
         this.resumeIsOpen = false;
         document.body.style.overflow = 'auto';
+        // document.body.classList.remove('no-scroll');
+
       }, 200);
     }
   }

@@ -6,7 +6,7 @@
 	margin: auto;
 	color: $main-color;
 	// color: black;
-	transition: all 0.1s ease-out;
+	transition: all $hover-animation-duration ease-out;
 	cursor: pointer;
 	transform: skew(-3deg, -2deg);
 
@@ -26,7 +26,7 @@
 			height: 10rem;
 			object-fit: cover;
 			filter: grayscale(80%);
-			transition: all 0.3s ease;
+			transition: all $hover-animation-duration ease;
 		}
 	}
 
@@ -60,7 +60,7 @@
 	z-index: 424242;
 	background-color: $main-color;
 	color: $dark-color;
-	animation-duration: 0.2s;
+	animation-duration: $hover-animation-duration;
 	display: flex;
 	justify-content: center;
 
@@ -134,12 +134,18 @@
 		.project-fullscreen-url {
 			font-size: 1.3rem;
 			font-weight: bold;
-			transition: all 0.3s ease-in-out;
-			display: inline-block;
+			transition: all $hover-animation-duration ease-in-out;
+			display: flex;
+			align-items: center;
 			// margin: auto;
 
 			&:hover {
 				margin-left: (1rem);
+			}
+
+			i {
+				font-size: 1.1rem;
+				margin-right: 0.5rem;
 			}
 		}
 	}
@@ -152,7 +158,7 @@
 		font-weight: bold;
 		width: 2rem;
 		line-height: 2rem;
-		transition: all 0.3s ease-in-out;
+		transition: all $hover-animation-duration ease-in-out;
 		transform: skew(-3deg, -2deg);
 
 		&:hover {
