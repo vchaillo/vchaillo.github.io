@@ -19,7 +19,6 @@ export class HeaderComponent implements AfterViewInit, OnDestroy {
   }
 
   handleScroll = () => {
-
     const scrollToTopLink = document.querySelector('.scroll-to-top-link');
 
     if (window.scrollY > 50) {
