@@ -1,10 +1,7 @@
 @import '../../../variables';
 
 .stack {
-
-	@media (max-width: $mobile-breakpoint) {
-		margin-bottom: 1rem;
-	}
+	margin-bottom: 1rem;
 
 	.tools {
 		display: flex;

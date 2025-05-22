@@ -1,16 +1,19 @@
 @import '../../../variables';
 
 footer {
-	padding: 1.5rem;
+	padding: 2rem;
 	background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
 
 	display: flex;
-	justify-content: center;
-	// max-width: 20rem;
+	justify-content: space-around;
+
+	@media (max-width: $mobile-breakpoint) {
+		justify-content: space-between;
+	}
 
 	.links {
 		text-align: center;
-		margin: 0 4rem;
+		// margin: 0 4rem;
 	}
 
 	h3 {
