@@ -21,10 +21,13 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
 
   ngOnInit() {
     window.onload = () => {
-      // setTimeout(() => {
       this.isLoading = false;
-      // }, 500);
+      // setTimeout(() => {
     }
+
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 500);
   }
 
   ngAfterViewInit() {
