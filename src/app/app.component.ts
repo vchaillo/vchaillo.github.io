@@ -18,6 +18,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 })
 export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   isLoading = true;
+  animatedElements!: NodeList;
 
   ngOnInit() {
     window.onload = () => {
@@ -31,12 +32,13 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
   }
 
   ngAfterViewInit() {
+    this.animatedElements = document.querySelectorAll('.title');
     window.addEventListener('scroll', this.handleScroll);
   }
 
   handleScroll = () => {
     // const animatedElements = document.querySelectorAll('[class^="animated"]');
-    const animatedElements = document.querySelectorAll('.title');
+    // const animatedElements = document.querySelectorAll('.title');
 
 
     // const studiesTitle = document.querySelector('#studies-title');
@@ -52,10 +54,10 @@ export class AppComponent implements OnInit, AfterViewInit, OnDestroy {
     //   }
     // }
 
-    if (animatedElements) {
+    if (this.animatedElements) {
       // console.log('animatedElements : ', animatedElements);
 
-      animatedElements.forEach((element: Element) => {
+      this.animatedElements.forEach((element: any) => {
 
         // console.log('ElementText : ', element.textContent);
 
