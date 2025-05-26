@@ -84,7 +84,7 @@ export class ProjectsComponent {
       this.currentIndex = this.projects.length - 1;
     }
 
-    this.entrance = 'right';
+    this.entrance = 'left';
   }
 
   nextProject(index: number) {
@@ -94,7 +94,6 @@ export class ProjectsComponent {
       this.currentIndex = 0;
     }
 
-    this.entrance = 'left';
+    this.entrance = 'right';
   }
-
 }

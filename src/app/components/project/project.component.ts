@@ -79,9 +79,9 @@ export class ProjectComponent implements OnInit {
     this.entrance = 'right';
 
     if (this.projectFullScreenElement) {
-      this.projectFullScreenElement.classList.add('animated-slide-out-screen-left');
+      this.projectFullScreenElement.classList.add('animated-slide-out-screen-right');
       setTimeout(() => {
-        this.projectFullScreenElement.classList.remove('animated-slide-out-screen-left');
+        this.projectFullScreenElement.classList.remove('animated-slide-out-screen-right');
         this.isOpen = false;
         this.goToPreviousProject.emit(this.index);
       }, 200);
@@ -93,9 +93,9 @@ export class ProjectComponent implements OnInit {
     this.entrance = 'left';
 
     if (this.projectFullScreenElement) {
-      this.projectFullScreenElement.classList.add('animated-slide-out-screen-right');
+      this.projectFullScreenElement.classList.add('animated-slide-out-screen-left');
       setTimeout(() => {
-        this.projectFullScreenElement.classList.remove('animated-slide-out-screen-right');
+        this.projectFullScreenElement.classList.remove('animated-slide-out-screen-left');
         this.isOpen = false;
         this.goToNextProject.emit(this.index);
       }, 200);
