@@ -14,7 +14,7 @@ export class ProjectsComponent {
     {
       name: 'Les Fleuristes',
       url: 'https://les-fleuristes.fr',
-      date: '2025',
+      date: '2026',
       image: 'projects/les-fleuristes.png',
       description: 'Site vitrine présentant les produits et prestations d’une cliente fleuriste. Le site inclut une galerie de compositions ainsi que différents formulaires de contact pour la prise de rendez-vous.',
       stack: ['Angular', 'NodeJS', 'Express', 'Bulma'],
